@@ -1,3 +1,40 @@
+## My personal website
+
+### TODO
+
+- [ ] summarize background
+    - [ ] education
+    - [ ] work experience
+    - [ ] hobbies
+    - [ ] platform links
+- [ ] source "realtime" data from recents
+    - [ ] templatize account auth for cloning
+    - [ ] notion saved links
+    - [ ] kindle/goodreads books
+    - [ ] github
+    - [ ] strava
+    - [ ] spotify
+    - [ ] reddit
+    - [ ] twitter
+    - [ ] crypto
+        - [ ] viamirror
+        - [ ] NFTs
+- [ ] use three.js to render virtual desktop
+    - [ ] room
+        - [ ] floors
+            - [ ] rug
+        - [ ] walls
+            - [ ] art
+    - [ ] desk
+        - [ ] keyboard
+        - [ ] chair
+        - [ ] monitors
+        - [ ] succulents
+        - [ ] coffee
+
+
+ ---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
