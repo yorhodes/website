@@ -19,6 +19,7 @@
     - [ ] crypto
         - [ ] viamirror
         - [ ] NFTs
+    - [ ] patreon 
 - [ ] use three.js to render virtual desktop
     - [ ] room
         - [ ] floors
