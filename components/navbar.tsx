@@ -2,7 +2,6 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { Link, HStack, useColorMode, Spacer, Button } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { IconType } from "react-icons";
 
 export type NavPage = {
   href: string;

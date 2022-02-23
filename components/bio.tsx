@@ -1,6 +1,4 @@
-import { Link, Button, Flex, Text, Heading, Img } from "@chakra-ui/react";
-import { IconType } from "react-icons";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Flex, Text, Heading, Img } from "@chakra-ui/react";
 
 export type BioContent = {
   name: string;
