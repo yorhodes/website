@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaGoodreads,
   FaLinkedin,
+  FaMedium,
   FaReddit,
   FaSpotify,
   FaSteam,
@@ -48,7 +49,12 @@ export const socials: Social[] = [
   {
     href: "https://chess.com/member/yorhodes",
     icon: FaChess,
-    text: "chess.com",
+    text: "chess",
+  },
+  {
+    href: "https://medium.com/@yorkerhodesiv",
+    icon: FaMedium,
+    text: "medium",
   },
   {
     href: "https://goodreads.com/user/show/112440288-yorke-rhodes",
