@@ -8,13 +8,14 @@ const NavElem = ({ href, text }) => {
   return (
   <NextLink href={href} passHref>
     <Link
-      padding={2}
+      padding={1}
       fontWeight={ isActive ? "bold" : ""}
       backgroundColor={ isActive ? "gray.700": "gray.100" }
       textColor={ isActive ? "white" : "black"}
       rounded="md"
-      _hover={{
-        transform: "scale(1.15)"
+      _hover={ isActive ? {} : {
+        transform: "scale(1.1)",
+        backgroundColor: "gray.400"
       }}
     >
       {text}
