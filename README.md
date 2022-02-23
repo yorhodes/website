@@ -3,10 +3,10 @@
 ### TODO
 
 - [ ] summarize background
-    - [ ] education
-    - [ ] work experience
+    - [x] education
+    - [x] work experience
+    - [x] platform links
     - [ ] hobbies
-    - [ ] platform links
 - [ ] source "realtime" data from recents
     - [ ] templatize account auth for cloning
     - [ ] notion saved links

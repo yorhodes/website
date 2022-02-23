@@ -14,8 +14,8 @@ export type Experience = Place & {
 };
 
 export const ExperienceElem = (experience: Experience) => (
-  <Flex py="3" direction="row" gap="5">
-    <Img src={`logos/${experience.logo}`} objectFit="scale-down" width="10%"/>
+  <Flex margin="3" direction="row" gap="5">
+    <Img marginY="2" padding="1" src={`logos/${experience.logo}`} borderRadius='lg' bg="gray.500" objectFit="scale-down" width="10%"/>
     <Flex direction="column" width="50%">
       <Link href={experience.url} fontSize="lg" fontWeight="bold">
         {experience.name}
