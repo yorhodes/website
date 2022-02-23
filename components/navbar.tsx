@@ -13,7 +13,7 @@ const NavElem = (navPage: NavPage) => {
   const isActive = router.pathname === navPage.href;
 
   return (
-    <NextLink href={navPage.href} passHref>
+    <NextLink href={navPage.href} key={navPage.text} passHref>
       <Link
         paddingX={5}
         fontWeight={isActive ? "bold" : ""}

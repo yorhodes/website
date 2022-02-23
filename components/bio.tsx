@@ -7,7 +7,7 @@ export type BioContent = {
 };
 
 export const Bio = (content: BioContent) => (
-    <Flex direction="row" gap="10">
+    <Flex direction="row" gap="10" py="5">
       <Flex direction="column">
         <Heading>{content.name}</Heading>
         <Text fontSize="lg">{content.title}</Text>
