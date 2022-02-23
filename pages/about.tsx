@@ -1,10 +1,14 @@
 import { Container } from "@chakra-ui/react";
+import { ExperienceElem } from "../components/experience";
 import Navbar from "../components/navbar";
+import { experiences } from "../data/experience";
+import { navPages } from "../data/navbar";
 
-const IndexPage = () => (
-  <Container maxWidth="container.xl" padding={5}>
-    <Navbar/>
+const AboutPage = () => (
+  <Container>
+    {Navbar(navPages)}
+    {experiences.map(experience => ExperienceElem(experience))}
   </Container>
 );
 
-export default IndexPage;
+export default AboutPage;

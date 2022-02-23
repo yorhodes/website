@@ -1,10 +1,12 @@
 import { Container, Flex, Heading, Img, Spacer, Text, VStack } from "@chakra-ui/react";
 import Navbar from "../components/navbar";
 
+import { navPages } from "../data/navbar";
+
 const IndexPage = () => (
-  <Container padding={5}>
-    <Navbar/>
-    <Flex direction="row" paddingTop="5" gap="10">
+  <Container>
+    {Navbar(navPages)}
+    <Flex direction="row" gap="10">
       <Flex direction="column">
         <Heading>Yorke Rhodes IV</Heading>
         <Text fontSize="lg">Smart Contract Engineer</Text>
