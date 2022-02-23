@@ -1,10 +1,11 @@
 import { Container } from "@chakra-ui/react";
 import Navbar from "../components/navbar";
+import { navPages } from '../data/navbar';
 
-const IndexPage = () => (
-  <Container maxWidth="container.xl" padding={5}>
-    <Navbar/>
+const NowPage = () => (
+  <Container>
+    {Navbar(navPages)}
   </Container>
 );
 
-export default IndexPage;
+export default NowPage;
