@@ -1,4 +1,5 @@
-import { Container, Flex, Heading, Img, Spacer, Text, VStack } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
+
 import Bio from "../components/bio";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
