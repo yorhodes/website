@@ -10,7 +10,7 @@ export type Social = {
 
 const SocialElem = (social: Social) => {
   return (
-    <Link isExternal={true} href={social.href}>
+    <Link key={social.text} isExternal={true} href={social.href}>
       <Button
         paddingX={2}
         rounded="md"
