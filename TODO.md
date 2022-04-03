@@ -1,0 +1,32 @@
+### TODO
+
+- [ ] summarize background
+    - [x] education
+    - [x] work experience
+    - [x] platform links
+    - [ ] hobbies
+- [ ] source "realtime" data from recents
+    - [ ] templatize account auth for cloning
+    - [ ] notion saved links
+    - [ ] kindle/goodreads books
+    - [ ] github
+    - [ ] strava
+    - [ ] spotify
+    - [ ] reddit
+    - [ ] twitter
+    - [ ] crypto
+        - [ ] viamirror
+        - [ ] NFTs
+    - [ ] patreon 
+- [ ] use three.js to render virtual desktop
+    - [ ] room
+        - [ ] floors
+            - [ ] rug
+        - [ ] walls
+            - [ ] art
+    - [ ] desk
+        - [ ] keyboard
+        - [ ] chair
+        - [ ] monitors
+        - [ ] succulents
+        - [ ] coffee

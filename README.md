@@ -1,40 +1,10 @@
-## My personal website
+This is my attempt at creating a minimal, modular personal website.
 
-### TODO
+All of the personal content is defined in the [`data`](./data) directory and can be forked and edited there.
 
-- [ ] summarize background
-    - [x] education
-    - [x] work experience
-    - [x] platform links
-    - [ ] hobbies
-- [ ] source "realtime" data from recents
-    - [ ] templatize account auth for cloning
-    - [ ] notion saved links
-    - [ ] kindle/goodreads books
-    - [ ] github
-    - [ ] strava
-    - [ ] spotify
-    - [ ] reddit
-    - [ ] twitter
-    - [ ] crypto
-        - [ ] viamirror
-        - [ ] NFTs
-    - [ ] patreon 
-- [ ] use three.js to render virtual desktop
-    - [ ] room
-        - [ ] floors
-            - [ ] rug
-        - [ ] walls
-            - [ ] art
-    - [ ] desk
-        - [ ] keyboard
-        - [ ] chair
-        - [ ] monitors
-        - [ ] succulents
-        - [ ] coffee
+It is built with components and themes from [Chakra UI](https://chakra-ui.com/).
 
-
- ---
+---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
