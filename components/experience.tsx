@@ -7,10 +7,30 @@ export type Place = {
   location: string;
 };
 
+type digit = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+enum Month {
+  JAN = "January",
+  FEB = "February",
+  MAR = "March",
+  APR = "April",
+  MAY = "May",
+  JUN = "June",
+  JUL = "July",
+  AUG = "August",
+  SEP = "September",
+  OCT = "October",
+  NOV = "November",
+  DEC = "December"
+}
+
+type Date = `${Month} 20${digit}${digit}` | "Present"
+
 export type Experience = Place & {
   title: string;
-  description: string;
-  date: string;
+  description?: string;
+  start: Date;
+  end: Date;
 };
 
 export const ExperienceElem = (experience: Experience) => (
@@ -20,7 +40,7 @@ export const ExperienceElem = (experience: Experience) => (
       <Link href={experience.url} fontSize="lg" fontWeight="bold">
         {experience.name}
       </Link>
-      <Text fontSize="md">{experience.date}</Text>
+      <Text fontSize="md">{experience.start} - {experience.end}</Text>
       <Text>{experience.location}</Text>
     </Flex>
     <Flex direction="column" width="50%">
