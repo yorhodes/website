@@ -13,6 +13,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FiCalendar, FiMail } from "react-icons/fi";
+import { SiNotion } from 'react-icons/si';
 import { Social } from "../components/footer";
 
 export const socials: Social[] = [
@@ -30,6 +31,11 @@ export const socials: Social[] = [
     href: "https://github.com/yorhodes",
     icon: FaGithub,
     text: "github",
+  },
+  {
+    href: "https://notion.so/yorhodes",
+    icon: SiNotion,
+    text: "notion",
   },
   {
     href: "https://twitter.com/0xyorke",
