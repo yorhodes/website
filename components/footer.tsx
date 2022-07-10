@@ -17,8 +17,9 @@ const SocialElem = (social: Social) => {
         _hover={{
           transform: "scale(1.1)",
         }}
+        leftIcon={<social.icon />}
       >
-        <social.icon /> {social.text} <ExternalLinkIcon />
+        {social.text}
       </Button>
     </Link>
   );
