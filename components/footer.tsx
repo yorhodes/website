@@ -1,6 +1,5 @@
 import { Link, Button, Flex } from "@chakra-ui/react";
 import { IconType } from "react-icons";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export type Social = {
   href: string;

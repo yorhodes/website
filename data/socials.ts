@@ -13,7 +13,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FiCalendar, FiMail } from "react-icons/fi";
-import { SiNotion } from 'react-icons/si';
+import { SiNotion, SiObservable } from 'react-icons/si';
 import { Social } from "../components/footer";
 
 export const socials: Social[] = [
@@ -76,6 +76,11 @@ export const socials: Social[] = [
     href: "https://discordapp.com/users/yorhodes#3158",
     icon: FaDiscord,
     text: "discord",
+  },
+  {
+    href: "https://observablehq.com/@yorhodes",
+    icon: SiObservable,
+    text: "observable",
   },
   {
     href: "https://telegram.me/yorhodes",
