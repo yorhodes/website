@@ -23,12 +23,21 @@ const consensys: Place = {
 
 export const experiences: Experience[] = [
   {
+    title: "Founding Engineer",
+    name: "Hyperlane",
+    url: "https://hyperlane.xyz/",
+    logo: "hyperlane.png",
+    start: "April 2022",
+    end: "Present",
+    location: "New York City, NY",
+  },
+  {
     title: "Smart Contract Engineer",
     name: "Gauntlet",
     url: "https://gauntlet.network/",
     logo: "gauntlet.png",
     start: "December 2021",
-    end: "Present",
+    end: "May 2022",
     location: "Remote",
   },
   {
