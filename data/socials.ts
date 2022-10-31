@@ -1,4 +1,5 @@
 import {
+  FaBookReader,
   FaChess,
   FaDiscord,
   FaEthereum,
@@ -41,6 +42,11 @@ export const socials: Social[] = [
     href: "https://twitter.com/0xyorke",
     icon: FaTwitter,
     text: "twitter",
+  },
+  {
+    href: "https://curius.app/yorke-rhodes-iv",
+    icon: FaBookReader, // TODO: replace with custom icon
+    text: "curius"
   },
   {
     href: "https://open.spotify.com/user/1244236872",
