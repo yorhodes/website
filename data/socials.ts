@@ -14,7 +14,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FiCalendar, FiMail } from "react-icons/fi";
-import { SiNotion, SiObservable } from 'react-icons/si';
+import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
 import { Social } from "../components/footer";
 
 export const socials: Social[] = [
@@ -47,6 +47,11 @@ export const socials: Social[] = [
     href: "https://curius.app/yorke-rhodes-iv",
     icon: FaBookReader, // TODO: replace with custom icon
     text: "curius"
+  },
+  {
+    href: "https://substack.com/profile/5470140-yorke-rhodes-iv",
+    icon: SiSubstack,
+    text: "substack"
   },
   {
     href: "https://open.spotify.com/user/1244236872",
