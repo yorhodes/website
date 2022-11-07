@@ -18,8 +18,6 @@
 // export type Date = `${Month} 20${digit}${digit}` | "Present";
 
 enum Platform {
-  mail,
-  calendar,
   github,
   notion,
   twitter,
@@ -51,6 +49,8 @@ export interface BioContent {
   name: string;
   title: string;
   tagline: string;
+  email?: string;
+  calendar?: string;
 };
 
 export interface Experience extends Place {

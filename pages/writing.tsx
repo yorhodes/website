@@ -1,4 +1,4 @@
-import { Container } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 
 import navPages from "../data/navbar.json";
 import Navbar from "../components/navbar";
@@ -9,7 +9,9 @@ import writing from "../data/writing.json";
 const WritingPage = () => (
   <Container>
     {Navbar(navPages)}
-    {writing.map(content => WritingElem(content))}
+    <Flex direction="column" gap="3">
+      {writing.map(content => WritingElem(content))}
+    </Flex>
   </Container>
 );
 

@@ -22,8 +22,6 @@ import { FiCalendar, FiMail } from "react-icons/fi";
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
 
 const IconMap: Record<PlatformString, IconType> = {
-  mail: FiMail,
-  calendar: FiCalendar,
   github: FaGithub,
   notion: SiNotion,
   twitter: FaTwitter,
@@ -47,7 +45,7 @@ const LogoLink = (social: Social) => {
   const label = social.label ?? platform;
   const icon: IconType = IconMap[platform] ?? FaBookReader;
   return (
-    <Link key={label} isExternal={true} href={social.link}>
+    <Link key={label} href={social.link} isExternal>
       <Button
         paddingX={2}
         rounded="md"
@@ -55,6 +53,7 @@ const LogoLink = (social: Social) => {
           transform: "scale(1.1)",
         }}
         leftIcon={icon({})}
+        size="sm"
       >
         {label}
       </Button>
