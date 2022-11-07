@@ -42,7 +42,7 @@ export type PlatformString = keyof typeof Platform;
 
 export interface Place {
   name: string;
-  url: string;
+  link: string;
   logo: string;
   location: string;
 };
@@ -74,6 +74,6 @@ export interface NavPage {
 export interface Content {
   title: string;
   description: string;
-  url: string;
-  release: string;
+  link: string;
+  published: string;
 };

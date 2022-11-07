@@ -2,31 +2,31 @@
     {
         "title": "Ethereum and How It Works",
         "description": "Introduction to Ethereum, the EVM, and the DApp stack",
-        "url": "https://medium.com/rice-blockchain/what-is-ethereum-and-how-does-it-work-ae00fb04a1d2",
-        "release": "March 2019"
+        "link": "https://medium.com/rice-blockchain/what-is-ethereum-and-how-does-it-work-ae00fb04a1d2",
+        "published": "March 2019"
     },
     {
         "title": "Consensus and Industry",
         "description": "Introduction to consensus algorithms and the industrial ecosystems surrounding Bitcoin PoW",
-        "url": "https://medium.com/rice-blockchain/consensus-industry-fd81e7c4b1ac",
-        "release": "February 2019"
+        "link": "https://medium.com/rice-blockchain/consensus-industry-fd81e7c4b1ac",
+        "published": "February 2019"
     },
     {
         "title": "Abstracting Blockchains",
         "description": "A framework for identifying and understanding the modular components of blockchains",
-        "url": "https://medium.com/rice-blockchain/abstracting-blockchains-enabling-stateful-applications-1ea694843939",
-        "release": "February 2019"
+        "link": "https://medium.com/rice-blockchain/abstracting-blockchains-enabling-stateful-applications-1ea694843939",
+        "published": "February 2019"
     },
     {
         "title": "Digital Currencies and Networks",
         "description": "History of money, digital currencies, and network effects",
-        "url": "https://medium.com/rice-blockchain/digital-currencies-networks-ad7ebeec712c",
-        "release": "January 2019"
+        "link": "https://medium.com/rice-blockchain/digital-currencies-networks-ad7ebeec712c",
+        "published": "January 2019"
     },
     {
         "title": "Building decentralized knowledge using incentives",
         "description": "Discussion of HackRice 8 project \"Synapse\": an economically sustainable and secure Wikipedia",
-        "url": "https://medium.com/rice-blockchain/synapse-build-decentralized-knowledge-using-incentives-544aef5542d3",
-        "release": "October 2018"
+        "link": "https://medium.com/rice-blockchain/synapse-build-decentralized-knowledge-using-incentives-544aef5542d3",
+        "published": "October 2018"
     }
 ]
