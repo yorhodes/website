@@ -2,7 +2,7 @@ import { Container, Flex } from "@chakra-ui/react";
 
 import { Bio } from "../components/bio";
 import Navbar from "../components/navbar";
-import SocialElem from "../components/social";
+import LogoLink from "../components/link";
 
 import bioContent from "../data/bio.json";
 import navPages from "../data/navbar.json";
@@ -14,7 +14,7 @@ const IndexPage = () => (
     {Bio(bioContent)}
     {
       <Flex wrap="wrap" gap="2">
-        {socials.map(SocialElem)}
+        {socials.map(LogoLink)}
       </Flex>
     }
   </Container>

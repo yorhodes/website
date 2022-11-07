@@ -42,7 +42,7 @@ const IconMap: Record<PlatformString, IconType> = {
   ens: FaEthereum
 }
 
-const SocialElem = (social: Social) => {
+const LogoLink = (social: Social) => {
   const platform = social.platform ?? new URL(social.link).hostname.split('.').reverse()[1];
   const label = social.label ?? platform;
   const icon: IconType = IconMap[platform] ?? FaBookReader;
@@ -62,4 +62,4 @@ const SocialElem = (social: Social) => {
   );
 };
 
-export default SocialElem;
+export default LogoLink;
