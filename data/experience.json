@@ -1,138 +1,36 @@
 [
     {
-        "name": "Hyperlane",
-        "link": "https://hyperlane.xyz/",
-        "logo": "hyperlane.png",
-        "location": "New York City",
+        "name": "<company 2>",
+        "link": "<company 2 link>",
+        "logo": "<company 2 logo path>",
+        "location": "<company 2 city",
         "roles": [
             {
-                "title": "Founding Engineer",
-                "description": "Solving fragmentation of blockchain networks with an economically secure, low latency interoperability protocol. Built for seamless developer experience across scaling solutions.",
-                "start": "April 2022",
-                "end": "Present"
+                "title": "<role 2>",
+                "description": "<role 2 description>",
+                "start": "<start date>",
+                "end": "<end date>"
+            },
+            {
+                "title": "<role 1>",
+                "description": "<role 1 description>",
+                "start": "<start date>",
+                "end": "<end date>"
             }
         ]
     },
     {
-        "name": "Gauntlet",
-        "link": "https://gauntlet.network/",
-        "logo": "gauntlet.png",
-        "location": "San Francisco",
+        "name": "<college>",
+        "link": "<college link>",
+        "logo": "<college logo path>",
+        "location": "<college location>",
         "roles": [
-            {
-                "title": "Smart Contract Specialist",
-                "description": "Built Gauntlet's 1st on-chain protocol: Aera Finance. Risk aware, capital efficient treasury management solution for DAOs. Audited by Spearbit. Would have prevented the Terra collapse.",
-                "start": "December 2021",
-                "end": "May 2022"
-            }
-        ]
-    },
-    {
-        "name": "Celo",
-        "link": "http://celo.org/",
-        "logo": "celo-logo-color.png",
-        "location": "San Francisco",
-        "roles": [
-            {
-                "title": "Partner, Smart Contracts Lead",
-                "description": "Code owner on production contracts for stablecoin and phone number ownership protocols. Orchestrated DAO governance with security oriented contract release process leveraging OpenZeppelin audits and Certora formal verification.",
-                "end": "December 2021",
-                "start": "March 2020"
-            },
-            {
-                "title": "Contractor, Protocol Engineering",
-                "description": "Built first production implementation of Coinbase Rosetta, an abstraction used for exchange accounting, low level tracing of value transfer, and high security offline staking services for Coinbase Custody customers.",
-                "end": "March 2020",
-                "start": "August 2019"
-            },
-            {
-                "title": "Intern, Protocol Engineering",
-                "description": "Implemented Proof of Stake validator features and slashing conditions, optimized oracle exchange rate reporting for stablecoin protocol, and contributed to privacy preserving enhancements to proof of phone number ownership protocol.",
-                "end": "August 2019",
-                "start": "April 2019"
-            }
-        ]
-    },
-    {
-        "name": "Rice University",
-        "logo": "rice-university_logo.png",
-        "link": "https://www.rice.edu",
-        "location": "Houston",
-        "roles": [
-            {
-                "title": "Faculty Instructor",
-                "description": "Taught full-credit course (2x) in the Center for Computational Finance and Economic Systems (CoFES) alongside Professor Manolo Sanchez and Topl founder / CTO James Aman.",
-                "end": "May 2020",
-                "start": "September 2018"
-            },
-            {
-                "title": "Rice Blockchain President",
-                "description": "Founded student organization focused on blockchain education, research, development and evangelism. Led 50+ members in maintaining a newsletter, organizing workshops, and meeting with industry professionals. Repeat host of Houston Ethereum Meetup.",
-                "end": "May 2020",
-                "start": "September 2017"
-            },
-            {
-                "title": " Student, Computer Science BSE",
-                "end": "May 2020",
-                "start": "September 2016"
-            }
-        ]
-    },
-    {
-        "name": "IBM",
-        "link": "https://www.ibm.com/blockchain",
-        "logo": "IBM-Blockchain.jpeg",
-        "location": "New York City",
-        "roles": [
-            {
-                "title": "Intern, Blockchain Garage",
-                "description": "Developed the IBM Blockchain Starter Kit: an open-source bootstrap tool for applications on Hyperledger. Includes build, test, deploy framework for goLang and NodeJS. Shipped a CLI for vastly improved developer experience.",
-                "start": "May 2018",
-                "end": "August 2018"
-            }
-        ]
-    },
-    {
-        "name": "ConsenSys",
-        "link": "https://consensys.net/",
-        "logo": "consensys-logo.jpeg",
-        "location": "New York City",
-        "roles": [
-            {
-                "title": "Intern",
-                "description": "Built the first Token Curated Registry (TCR) for the adChain registry, a whitelist of trusted advertisers for consumption by token holding web publishers. Shipped a generic ERC20 voting standard with partial locking and commit reveal (PLCR) scheme.",
-                "start": "May 2017",
-                "end": "August 2017"
-            },
-            {
-                "title": "Intern",
-                "description": "Worked on early smart contract prototypes like Proof of Physical Address: an automated protocol for verifying mailing address ownership with secrets sent via snail mail.",
-                "start": "June 2016",
-                "end": "August 2016"
-            }
-        ]
-    },
-    {
-        "name": "Bronx Science",
-        "link": "https://www.bxscience.edu/",
-        "logo": "bxscience-logo.jpeg",
-        "location": "New York City",
-        "roles": [
-            {
-                "title": "Robotics Programming & Electronics Lead",
-                "start": "September 2015",
-                "end": "May 2016"
-            },
-            {
-                "title": "Cancer Society President",
-                "start": "September 2015",
-                "end": "May 2016"
-            },
             {
                 "title": "Student",
-                "start": "September 2012",
-                "end": "May 2016"
+                "description": "<student major and courses description>",
+                "start": "<matriculation>",
+                "end": "<graduation>"
             }
         ]
-    }
+    },
 ]

@@ -1,65 +1,19 @@
 [
     {
-        "link": "mailto:contact@yorke.dev",
+        "link": "mailto:<email>",
         "platform": "mail",
         "label": "contact"
     },
     {
-        "link": "https://zcal.co/i/BPoGFzXm",
-        "platform": "calendar",
-        "label": "schedule"
+        "link": "https://github.com/<username>"
     },
     {
-        "link": "https://github.com/yorhodes"
+        "link": "https://twitter.com/<username>"
     },
     {
-        "link": "https://notion.so/yorhodes"
+        "link": "https://notion.so/<username>"
     },
     {
-        "link": "https://twitter.com/0xyorke"
+        "link": "https://substack.com/profile/<username>"
     },
-    {
-        "link": "https://curius.app/yorke-rhodes-iv",
-        "platform": "reader",
-        "label": "curius"
-    },
-    {
-        "link": "https://substack.com/profile/5470140-yorke-rhodes-iv"
-    },
-    {
-        "link": "https://open.spotify.com/user/1244236872"
-    },
-    {
-        "link": "https://linkedin.com/in/yorke-rhodes-iv/"
-    },
-    {
-        "link": "https://chess.com/member/yorhodes"
-    },
-    {
-        "link": "https://medium.com/@yorkerhodesiv"
-    },
-    {
-        "link": "https://goodreads.com/user/show/112440288-yorke-rhodes"
-    },
-    {
-        "link": "https://reddit.com/user/yorhodes4/"
-    },
-    {
-        "link": "https://discordapp.com/users/yorhodes#3158",
-        "label": "discord"
-    },
-    {
-        "link": "https://observablehq.com/@yorhodes",
-        "label": "observable"
-    },
-    {
-        "link": "https://telegram.me/yorhodes"
-    },
-    {
-        "link": "https://steamcommunity.com/profiles/76561198061512019/",
-        "label": "steam"
-    },
-    {
-        "link": "https://app.ens.domains/name/yorke.eth"
-    }
 ]
