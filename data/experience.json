@@ -7,6 +7,7 @@
         "roles": [
             {
                 "title": "Founding Engineer",
+                "description": "Solving fragmentation of blockchain networks with an economically secure, low latency interoperability protocol. Built for seamless developer experience across scaling solutions.",
                 "start": "April 2022",
                 "end": "Present"
             }
@@ -20,6 +21,7 @@
         "roles": [
             {
                 "title": "Smart Contract Specialist",
+                "description": "Built Gauntlet's 1st on-chain protocol: Aera Finance. Risk aware, capital efficient treasury management solution for DAOs. Audited by Spearbit. Would have prevented the Terra collapse.",
                 "start": "December 2021",
                 "end": "May 2022"
             }
@@ -33,31 +35,21 @@
         "roles": [
             {
                 "title": "Partner, Smart Contracts Lead",
+                "description": "Code owner on production contracts for stablecoin and phone number ownership protocols. Orchestrated DAO governance with security oriented contract release process leveraging OpenZeppelin audits and Certora formal verification.",
                 "end": "December 2021",
                 "start": "March 2020"
             },
             {
                 "title": "Contractor, Protocol Engineering",
+                "description": "Built first production implementation of Coinbase Rosetta, an abstraction used for exchange accounting, low level tracing of value transfer, and high security offline staking services for Coinbase Custody customers.",
                 "end": "March 2020",
                 "start": "August 2019"
             },
             {
                 "title": "Intern, Protocol Engineering",
+                "description": "Implemented Proof of Stake validator features and slashing conditions, optimized oracle exchange rate reporting for stablecoin protocol, and contributed to privacy preserving enhancements to proof of phone number ownership protocol.",
                 "end": "August 2019",
                 "start": "April 2019"
-            }
-        ]
-    },
-    {
-        "name": "IBM",
-        "link": "https://www.ibm.com/blockchain",
-        "logo": "IBM-Blockchain.jpeg",
-        "location": "New York City",
-        "roles": [
-            {
-                "title": "Blockchain Garage Intern",
-                "start": "May 2018",
-                "end": "August 2018"
             }
         ]
     },
@@ -69,12 +61,13 @@
         "roles": [
             {
                 "title": "Faculty Instructor",
-                "description": "Taught full-credit course (2x) in the Center for Computational Finance and Economic Systems (CoFES) alongside Professor Manolo Sanchez and Topl founder / CTO James Aman",
+                "description": "Taught full-credit course (2x) in the Center for Computational Finance and Economic Systems (CoFES) alongside Professor Manolo Sanchez and Topl founder / CTO James Aman.",
                 "end": "May 2020",
                 "start": "September 2018"
             },
             {
-                "title": "Rice Blockchain Founder, President",
+                "title": "Rice Blockchain President",
+                "description": "Founded student organization focused on blockchain education, research, development and evangelism. Led 50+ members in maintaining a newsletter, organizing workshops, and meeting with industry professionals. Repeat host of Houston Ethereum Meetup.",
                 "end": "May 2020",
                 "start": "September 2017"
             },
@@ -82,6 +75,40 @@
                 "title": " Student, Computer Science BSE",
                 "end": "May 2020",
                 "start": "September 2016"
+            }
+        ]
+    },
+    {
+        "name": "IBM",
+        "link": "https://www.ibm.com/blockchain",
+        "logo": "IBM-Blockchain.jpeg",
+        "location": "New York City",
+        "roles": [
+            {
+                "title": "Intern, Blockchain Garage",
+                "description": "Developed the IBM Blockchain Starter Kit: an open-source bootstrap tool for applications on Hyperledger. Includes build, test, deploy framework for goLang and NodeJS. Shipped a CLI for vastly improved developer experience.",
+                "start": "May 2018",
+                "end": "August 2018"
+            }
+        ]
+    },
+    {
+        "name": "ConsenSys",
+        "link": "https://consensys.net/",
+        "logo": "consensys-logo.jpeg",
+        "location": "New York City",
+        "roles": [
+            {
+                "title": "Intern",
+                "description": "Built the first Token Curated Registry (TCR) for the adChain registry, a whitelist of trusted advertisers for consumption by token holding web publishers. Shipped a generic ERC20 voting standard with partial locking and commit reveal (PLCR) scheme.",
+                "start": "May 2017",
+                "end": "August 2017"
+            },
+            {
+                "title": "Intern",
+                "description": "Worked on early smart contract prototypes like Proof of Physical Address: an automated protocol for verifying mailing address ownership with secrets sent via snail mail.",
+                "start": "June 2016",
+                "end": "August 2016"
             }
         ]
     },
