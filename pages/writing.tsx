@@ -4,9 +4,12 @@ import WritingElem from "../components/writing";
 import writing from "../data/writing.json";
 
 const WritingPage = () => (
-  <Flex direction="column" gap="3">
-    {writing.map(WritingElem)}
-  </Flex>
+  <Container>
+    {Navbar(navPages)}
+    <Flex direction="column" gap="3">
+      {writing.map(WritingElem)}
+    </Flex>
+  </Container>
 );
 
 export default WritingPage;
