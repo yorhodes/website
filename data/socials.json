@@ -1,0 +1,19 @@
+[
+    {
+        "link": "mailto:<email>",
+        "platform": "mail",
+        "label": "contact"
+    },
+    {
+        "link": "https://github.com/<username>"
+    },
+    {
+        "link": "https://twitter.com/<username>"
+    },
+    {
+        "link": "https://notion.so/<username>"
+    },
+    {
+        "link": "https://substack.com/profile/<username>"
+    },
+]
