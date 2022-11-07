@@ -10,7 +10,7 @@ const WritingPage = () => (
   <Container>
     {Navbar(navPages)}
     <Flex direction="column" gap="3">
-      {writing.map(content => WritingElem(content))}
+      {writing.map(WritingElem)}
     </Flex>
   </Container>
 );
