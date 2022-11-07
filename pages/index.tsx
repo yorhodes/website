@@ -1,4 +1,4 @@
-import { Container } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 
 import { Bio } from "../components/bio";
 import Navbar from "../components/navbar";
@@ -12,7 +12,11 @@ const IndexPage = () => (
   <Container>
     {Navbar(navPages)}
     {Bio(bioContent)}
-    {socials.map(SocialElem)}
+    {
+      <Flex wrap="wrap" gap="2">
+        {socials.map(SocialElem)}
+      </Flex>
+    }
   </Container>
 );
 

@@ -17,26 +17,28 @@
 
 // export type Date = `${Month} 20${digit}${digit}` | "Present";
 
-export enum Platform {
-  Mail,
-  Calendar,
-  Github,
-  Notion,
-  Twitter,
-  Reader,
-  Substack,
-  Spotify,
-  LinkedIn,
-  Chess,
-  Medium,
-  Goodreads,
-  Reddit,
-  Discord,
-  Observable,
-  Telegram,
-  Steam,
-  Ethereum
+enum Platform {
+  mail,
+  calendar,
+  github,
+  notion,
+  twitter,
+  reader,
+  substack,
+  spotify,
+  linkedin,
+  chess,
+  medium,
+  goodreads,
+  reddit,
+  discordapp,
+  observablehq,
+  telegram,
+  steamcommunity,
+  ens
 }
+
+export type PlatformString = keyof typeof Platform;
 
 export interface Place {
   name: string;
@@ -60,7 +62,7 @@ export interface Experience extends Place {
 
 export interface Social {
   link: string;
-  platform: Platform | string;
+  platform?: string;
   label?: string;
 };
 

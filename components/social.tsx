@@ -1,5 +1,5 @@
 import { Link, Button } from "@chakra-ui/react";
-import { Social, Platform } from "../types";
+import { Social, Platform, PlatformString } from "../types";
 
 import { IconType } from "react-icons";
 
@@ -21,9 +21,9 @@ import {
 import { FiCalendar, FiMail } from "react-icons/fi";
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
 
-const IconMap = {
+const IconMap: Record<PlatformString, IconType> = {
   mail: FiMail,
-  cal: FiCalendar,
+  calendar: FiCalendar,
   github: FaGithub,
   notion: SiNotion,
   twitter: FaTwitter,
@@ -44,8 +44,8 @@ const IconMap = {
 
 const SocialElem = (social: Social) => {
   const platform = social.platform ?? new URL(social.link).hostname.split('.').reverse()[1];
-  const icon = IconMap[platform] ?? FaBookReader;
   const label = social.label ?? platform;
+  const icon: IconType = IconMap[platform] ?? FaBookReader;
   return (
     <Link key={label} isExternal={true} href={social.link}>
       <Button
@@ -54,7 +54,7 @@ const SocialElem = (social: Social) => {
         _hover={{
           transform: "scale(1.1)",
         }}
-        leftIcon={{icon}}
+        leftIcon={icon({})}
       >
         {label}
       </Button>
