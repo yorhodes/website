@@ -1,5 +1,5 @@
 import { Link, Button } from "@chakra-ui/react";
-import { Social, Platform, PlatformString } from "../types";
+import { Social, PlatformString } from "../types";
 
 import { IconType } from "react-icons";
 
@@ -22,6 +22,8 @@ import { FiCalendar, FiMail } from "react-icons/fi";
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
 
 const IconMap: Record<PlatformString, IconType> = {
+  mail: FiMail,
+  calendar: FiCalendar,
   github: FaGithub,
   notion: SiNotion,
   twitter: FaTwitter,

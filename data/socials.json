@@ -1,5 +1,15 @@
 [
     {
+        "link": "mailto:contact@yorke.dev",
+        "platform": "mail",
+        "label": "contact"
+    },
+    {
+        "link": "https://zcal.co/i/BPoGFzXm",
+        "platform": "calendar",
+        "label": "schedule"
+    },
+    {
         "link": "https://github.com/yorhodes"
     },
     {

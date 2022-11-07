@@ -4,13 +4,13 @@ import Navbar from "../components/navbar";
 import experiences from "../data/experience.json"; 
 import navPages from "../data/navbar.json";
 
-const AboutPage = () => (
+const ExperiencePage = () => (
   <Container>
     {Navbar(navPages)}
-    <Flex direction="column" gap="3">
-      {experiences.map((experience) => ExperienceElem(experience))}
+    <Flex direction="column" gap="8">
+      {experiences.map(ExperienceElem)}
     </Flex>
   </Container>
 );
 
-export default AboutPage;
+export default ExperiencePage;

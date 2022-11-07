@@ -18,6 +18,8 @@
 // export type Date = `${Month} 20${digit}${digit}` | "Present";
 
 enum Platform {
+  mail,
+  calendar,
   github,
   notion,
   twitter,
@@ -33,7 +35,7 @@ enum Platform {
   observablehq,
   telegram,
   steamcommunity,
-  ens
+  ens,
 }
 
 export type PlatformString = keyof typeof Platform;
@@ -43,7 +45,7 @@ export interface Place {
   link: string;
   logo: string;
   location: string;
-};
+}
 
 export interface BioContent {
   name: string;
@@ -51,29 +53,33 @@ export interface BioContent {
   tagline: string;
   email?: string;
   calendar?: string;
-};
+}
 
-export interface Experience extends Place {
+export interface Role {
   title: string;
   description?: string;
   start: string;
   end: string;
-};
+}
+
+export interface Experience extends Place {
+  roles: Role[];
+}
 
 export interface Social {
   link: string;
   platform?: string;
   label?: string;
-};
+}
 
 export interface NavPage {
   link: string;
   text: string;
-};
+}
 
 export interface Content {
   title: string;
   description: string;
   link: string;
   published: string;
-};
+}

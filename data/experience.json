@@ -1,119 +1,111 @@
 [
     {
-        "title": "Founding Engineer",
         "name": "Hyperlane",
         "link": "https://hyperlane.xyz/",
         "logo": "hyperlane.png",
-        "start": "April 2022",
-        "end": "Present",
-        "location": "New York City, NY"
+        "location": "New York City",
+        "roles": [
+            {
+                "title": "Founding Engineer",
+                "start": "April 2022",
+                "end": "Present"
+            }
+        ]
     },
     {
-        "title": "Smart Contract Engineer",
         "name": "Gauntlet",
         "link": "https://gauntlet.network/",
         "logo": "gauntlet.png",
-        "start": "December 2021",
-        "end": "May 2022",
-        "location": "Remote"
+        "location": "San Francisco",
+        "roles": [
+            {
+                "title": "Smart Contract Specialist",
+                "start": "December 2021",
+                "end": "May 2022"
+            }
+        ]
     },
     {
         "name": "Celo",
-        "logo": "celo-logo-color.png",
         "link": "http://celo.org/",
-        "location": "San Francisco, CA",
-        "title": "Smart Contracts Lead",
-        "start": "March 2020",
-        "end": "December 2021"
-    },
-    {
-        "name": "Celo",
         "logo": "celo-logo-color.png",
-        "link": "http://celo.org/",
-        "title": "Protocol Contractor",
-        "location": "Houston, TX",
-        "start": "August 2019",
-        "end": "March 2020"
+        "location": "San Francisco",
+        "roles": [
+            {
+                "title": "Partner, Smart Contracts Lead",
+                "end": "December 2021",
+                "start": "March 2020"
+            },
+            {
+                "title": "Contractor, Protocol Engineering",
+                "end": "March 2020",
+                "start": "August 2019"
+            },
+            {
+                "title": "Intern, Protocol Engineering",
+                "end": "August 2019",
+                "start": "April 2019"
+            }
+        ]
     },
     {
-        "name": "Rice University CoFES",
-        "logo": "cofes-logo.png",
-        "link": "https://cofes.rice.edu/",
-        "title": "Faculty Instructor",
-        "start": "September 2019",
-        "end": "May 2020",
-        "location": "Houston, TX"
-    },
-    {
-        "name": "Celo",
-        "logo": "celo-logo-color.png",
-        "link": "http://celo.org/",
-        "location": "San Francisco, CA",
-        "title": "Protocol Engineering Intern",
-        "start": "April 2019",
-        "end": "August 2019"
-    },
-    {
-        "name": "Rice University",
-        "logo": "rice-university_logo.png",
-        "location": "Houston, TX",
-        "link": "https://medium.com/rice-blockchain/course/home",
-        "title": "Course Instructor",
-        "start": "September 2018",
-        "end": "May 2019"
-    },
-    {
-        "name": "IBM Blockchain Garage",
+        "name": "IBM",
         "link": "https://www.ibm.com/blockchain",
         "logo": "IBM-Blockchain.jpeg",
-        "title": "Software Engineering Intern",
-        "start": "May 2018",
-        "end": "August 2018",
-        "location": "Manhattan, NY"
-    },
-    {
-        "name": "Rice Blockchain",
-        "link": "https://blockchain.rice.edu/",
-        "location": "Houston, TX",
-        "logo": "rice_blockchain.svg",
-        "title": "Founder, President",
-        "start": "September 2017",
-        "end": "May 2020"
-    },
-    {
-        "name": "Consensys",
-        "logo": "consensys-logo.jpeg",
-        "link": "https://www.consensys.net/",
-        "location": "Brooklyn, NY",
-        "title": "Smart Contracts Intern",
-        "start": "May 2017",
-        "end": "August 2017"
+        "location": "New York City",
+        "roles": [
+            {
+                "title": "Blockchain Garage Intern",
+                "start": "May 2018",
+                "end": "August 2018"
+            }
+        ]
     },
     {
         "name": "Rice University",
         "logo": "rice-university_logo.png",
-        "link": "https://www.rice.edu/",
-        "location": "Houston, TX",
-        "title": "Computer Science BSE",
-        "start": "August 2016",
-        "end": "May 2020"
+        "link": "https://www.rice.edu",
+        "location": "Houston",
+        "roles": [
+            {
+                "title": "Faculty Instructor",
+                "description": "Taught full-credit course (2x) in the Center for Computational Finance and Economic Systems (CoFES) alongside Professor Manolo Sanchez and Topl founder / CTO James Aman",
+                "end": "May 2020",
+                "start": "September 2018"
+            },
+            {
+                "title": "Rice Blockchain Founder, President",
+                "end": "May 2020",
+                "start": "September 2017"
+            },
+            {
+                "title": " Student, Computer Science BSE",
+                "end": "May 2020",
+                "start": "September 2016"
+            }
+        ]
     },
     {
-        "name": "Consensys",
-        "logo": "consensys-logo.jpeg",
-        "link": "https://www.consensys.net/",
-        "location": "Brooklyn, NY",
-        "title": "Software Engineering Intern",
-        "start": "May 2016",
-        "end": "August 2016"
-    },
-    {
-        "title": "Student",
-        "name": "Bronx High School of Science",
+        "name": "Bronx Science",
         "link": "https://www.bxscience.edu/",
         "logo": "bxscience-logo.jpeg",
-        "start": "September 2012",
-        "end": "May 2016",
-        "location": "Bronx, NY"
+        "location": "New York City",
+        "roles": [
+            {
+                "title": "Robotics Programming & Electronics Lead",
+                "start": "September 2015",
+                "end": "May 2016"
+            },
+            {
+                "title": "Cancer Society President",
+                "start": "September 2015",
+                "end": "May 2016"
+            },
+            {
+                "title": "Student",
+                "start": "September 2012",
+                "end": "May 2016"
+            }
+        ]
     }
 ]

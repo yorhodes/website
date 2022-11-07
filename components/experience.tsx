@@ -1,19 +1,46 @@
 import { Text, Flex, Img, Link } from "@chakra-ui/react";
-import { Experience } from "../types";
+import { Experience, Role } from "../types";
+
+const ExperienceRole = (role: Role) => (
+  <Flex key={role.title} direction="row">
+    <Flex direction="column" width="75%">
+      <Text fontSize="md" as="b">
+        {role.title}
+      </Text>
+      <Text fontSize="sm">{role.description}</Text>
+    </Flex>
+    <Flex direction="column" width="25%">
+      <Text fontSize="x-small" align="right">
+        {role.end}
+      </Text>
+      <Text fontSize="x-small" align="right">
+        {role.start}
+      </Text>
+    </Flex>
+  </Flex>
+);
 
 const ExperienceElem = (experience: Experience) => (
-  <Flex key={experience.name + experience.title} direction="row" gap="3">
-    <Img marginY="2" padding="1" src={`logos/${experience.logo}`} borderRadius='lg' bg="gray.500" objectFit="scale-down" width="10%"/>
-    <Flex direction="column" width="50%">
-      <Link href={experience.link} isExternal>
+  <Flex direction="row" gap="3" key={experience.name}>
+    <Flex direction="column" alignItems="center" maxWidth="20">
+      <Img
+        bg="white"
+        padding="3"
+        src={`logos/${experience.logo}`}
+        objectFit="scale-down"
+        maxWidth="20"
+        minHeight="20"
+        rounded="lg"
+      />
+      <Link href={experience.link} fontSize="lg" textAlign="center" isExternal>
         {experience.name}
       </Link>
-      <Text fontSize="md">{experience.title}</Text>
-      <Text fontSize="sm">{experience.description}</Text>
+      <Text marginY="-1" fontSize="x-small">
+        {experience.location}
+      </Text>
     </Flex>
-    <Flex direction="column" width="50%">
-      <Text fontSize="sm" align="right">{experience.start} - {experience.end}</Text>
-      <Text fontSize="sm" align="right">{experience.location}</Text>
+    <Flex direction="column" width="100%" gap="3">
+      {experience.roles.map(ExperienceRole)}
     </Flex>
   </Flex>
 );
