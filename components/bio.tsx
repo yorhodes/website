@@ -1,10 +1,5 @@
 import { Flex, Text, Heading, Img } from "@chakra-ui/react";
-
-export type BioContent = {
-  name: string;
-  title: string;
-  tagline: string;
-};
+import { BioContent } from "../types";
 
 export const Bio = (content: BioContent) => (
     <Flex direction="row" gap="10" py="5">

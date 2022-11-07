@@ -1,18 +1,18 @@
 import { Container } from "@chakra-ui/react";
 
-import Bio from "../components/bio";
-import Footer from "../components/footer";
+import { Bio } from "../components/bio";
 import Navbar from "../components/navbar";
+import SocialElem from "../components/social";
 
-import { bioContent } from "../data/bio";
-import { navPages } from "../data/navbar";
-import { socials } from "../data/socials";
+import bioContent from "../data/bio.json";
+import navPages from "../data/navbar.json";
+import socials from "../data/socials.json";
 
 const IndexPage = () => (
   <Container>
     {Navbar(navPages)}
     {Bio(bioContent)}
-    {Footer(socials)}
+    {socials.map(SocialElem)}
   </Container>
 );
 
