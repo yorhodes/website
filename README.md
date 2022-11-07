@@ -18,4 +18,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Components and themes from [Chakra UI](https://chakra-ui.com/).
 
-Deployed with [Vercel](https://vercel.com/).
+[yorke.dev](https://yorke.dev) is deployed with [Vercel](https://vercel.com/) from the [yorke](https://github.com/yorhodes/website/tree/yorke) branch.
