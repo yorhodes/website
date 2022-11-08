@@ -2,7 +2,7 @@ import { Text, Flex, Img, Link } from "@chakra-ui/react";
 import { Experience, Role } from "../types";
 
 const ExperienceRole = (role: Role) => (
-  <Flex key={role.title} direction="row">
+  <Flex key={role.title + role.end} direction="row">
     <Flex direction="column" width="75%">
       <Text fontSize="md" as="u">
         {role.title}
