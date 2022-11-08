@@ -39,7 +39,7 @@ const ToggleDarkModeButton = () => {
 const Navbar = (navPages: NavPage[]) => {
   return (
     <HStack paddingY="5">
-      {navPages.map((navPage) => NavElem(navPage))}
+      {navPages.map(NavElem)}
       <Spacer />
       <ToggleDarkModeButton />
     </HStack>
