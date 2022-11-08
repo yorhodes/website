@@ -2,15 +2,12 @@ import { Button, Link } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { CgGitFork } from "react-icons/cg";
 
-const getDataPath = () => {
+const ForkElem = () => {
   const router = useRouter();
   const file = router.pathname === "/" ? "bio" : router.pathname.slice(1);
-  return `${file}.json`;
-};
-
-const ForkElem = () => {
+  const datapath = `${file}.json`;
   const branch = process.env.VERCEL_GIT_COMMIT_REF ?? 'main';
-  const forkUrl = `https://github.com/yorhodes/website/edit/${branch}/data/${getDataPath()}`;
+  const forkUrl = `https://github.com/yorhodes/website/edit/${branch}/data/${datapath}`;
   return (
     <Link href={forkUrl} isExternal>
       <Button
