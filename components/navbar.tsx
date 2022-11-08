@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { Link, HStack, useColorMode, Spacer, Button } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { NavPage } from "../types";
+import ForkElem from "./fork";
 
 const NavElem = (navPage: NavPage) => {
   const router = useRouter();
@@ -41,6 +42,7 @@ const Navbar = (navPages: NavPage[]) => {
     <HStack paddingY="5">
       {navPages.map(NavElem)}
       <Spacer />
+      <ForkElem />
       <ToggleDarkModeButton />
     </HStack>
   );
