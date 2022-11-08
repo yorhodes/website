@@ -20,20 +20,21 @@ const ExperienceRole = (role: Role) => (
   </Flex>
 );
 
-const ExperienceElem = (experience: Experience) => (
+const ExperienceElem = (experience: Experience) => {
+  return (
   <Flex direction="row" gap="5" key={experience.name}>
     <Flex direction="column" alignItems="center" maxWidth="20">
-      <Img
-        bg="white"
-        padding="3"
-        src={`logos/${experience.logo}`}
-        objectFit="scale-down"
-        maxWidth="20"
-        minHeight="20"
-        rounded="lg"
-      />
-      <Link href={experience.link} fontSize="lg" as="b" textAlign="center" isExternal>
-        {experience.name}
+      <Link href={experience.link} textAlign="center" isExternal>
+        <Img
+          bg="white"
+          padding="3"
+          src={`logos/${experience.logo}`}
+          objectFit="scale-down"
+          maxWidth="20"
+          minHeight="20"
+          rounded="lg"
+        />
+        <Text as="b">{experience.name}</Text>
       </Link>
       <Text marginY="-1" fontSize="x-small">
         {experience.location}
@@ -43,6 +44,6 @@ const ExperienceElem = (experience: Experience) => (
       {experience.roles.map(ExperienceRole)}
     </Flex>
   </Flex>
-);
+)}
 
 export default ExperienceElem;
