@@ -5,6 +5,7 @@ import Navbar from "../components/navbar";
 
 import WritingElem from "../components/writing";
 import writing from "../data/writing.json";
+import Footer from "../components/footer";
 
 const WritingPage = () => (
   <Container>
@@ -12,6 +13,7 @@ const WritingPage = () => (
     <Flex direction="column" gap="3">
       {writing.map(WritingElem)}
     </Flex>
+    <Footer/>
   </Container>
 );
 

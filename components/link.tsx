@@ -5,6 +5,7 @@ import { IconType } from "react-icons";
 
 import {
   FaBookReader,
+  FaCalendar,
   FaChess,
   FaDiscord,
   FaEthereum,
@@ -18,12 +19,12 @@ import {
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
-import { FiCalendar, FiMail } from "react-icons/fi";
+import { MdEmail } from 'react-icons/md';
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
 
 const IconMap: Record<PlatformString, IconType> = {
-  mail: FiMail,
-  calendar: FiCalendar,
+  mail: MdEmail,
+  calendar: FaCalendar,
   github: FaGithub,
   notion: SiNotion,
   twitter: FaTwitter,
@@ -42,25 +43,39 @@ const IconMap: Record<PlatformString, IconType> = {
   ens: FaEthereum
 }
 
-const LogoLink = (social: Social) => {
+interface LogoLinkProps {
+  link: string;
+  icon: IconType;
+  label: string;
+}
+
+const socialToLink = (social: Social): LogoLinkProps => {
   const platform = social.platform ?? new URL(social.link).hostname.split('.').reverse()[1];
   const label = social.label ?? platform;
   const icon: IconType = IconMap[platform] ?? FaBookReader;
-  return (
-    <Link key={label} href={social.link} isExternal>
+  return {
+    link: social.link,
+    icon,
+    label
+  }
+}
+
+export const LogoLink = (props: LogoLinkProps) => (
+    <Link key={props.label} href={props.link} isExternal>
       <Button
         paddingX={2}
         rounded="md"
         _hover={{
           transform: "scale(1.1)",
         }}
-        leftIcon={icon({})}
-        size="sm"
+        leftIcon={props.icon({})}
+        size="x-small"
       >
-        {label}
+        {props.label}
       </Button>
     </Link>
   );
-};
 
-export default LogoLink;
+const SocialLogoLink = (social: Social) => LogoLink(socialToLink(social));
+
+export default SocialLogoLink;

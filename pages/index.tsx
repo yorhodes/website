@@ -7,6 +7,7 @@ import ExternalPlatformLink from "../components/link";
 import bioContent from "../data/bio.json";
 import navPages from "../data/navbar.json";
 import socials from "../data/socials.json";
+import Footer from "../components/footer";
 
 const IndexPage = () => (
   <Container>
@@ -17,6 +18,7 @@ const IndexPage = () => (
         {socials.map(ExternalPlatformLink)}
       </Flex>
     }
+    <Footer/>
   </Container>
 );
 
