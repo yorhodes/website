@@ -1,5 +1,11 @@
 [
     {
+        "title": "Announcing Interchain Accounts and Queries for the EVM",
+        "description": "An introduction to two developer primitives that vastly simplify building crosschain applications",
+        "link": "https://medium.com/hyperlane/announcing-interchain-accounts-and-queries-783452e23ff2",
+        "published": "Nov 2022"
+    },
+    {
         "title": "Ethereum and How It Works",
         "description": "Introduction to Ethereum, the EVM, and the DApp stack",
         "link": "https://medium.com/rice-blockchain/what-is-ethereum-and-how-does-it-work-ae00fb04a1d2",
