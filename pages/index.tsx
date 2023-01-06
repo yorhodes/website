@@ -4,13 +4,13 @@ import { Bio } from "../components/bio";
 import ExternalPlatformLink from "../components/link";
 
 import bio from "../data/bio.json";
-import socials from "../data/socials.json";
+import links from "../data/links.json";
 
 const IndexPage = () => (
   <Box>
     {Bio(bio)}
     <Flex wrap="wrap" gap="2">
-      {socials.map(ExternalPlatformLink)}
+      {links.map(ExternalPlatformLink)}
     </Flex>
   </Box>
 );

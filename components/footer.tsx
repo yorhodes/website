@@ -10,7 +10,7 @@ const getRepo = () => {
   const platform = process.env.VERCEL_GIT_PROVIDER ?? 'github';
   const name = process.env.VERCEL_GIT_REPO_SLUG ?? "website"
   const owner = process.env.VERCEL_GIT_REPO_OWNER ?? "yorhodes";
-  const branch = process.env.VERCEL_GIT_COMMIT_REF ?? 'main';
+  const branch = process.env.VERCEL_GIT_COMMIT_REF ?? 'yorke';
 
   const repo = `https://${platform}.com/${owner}/${name}`;
 

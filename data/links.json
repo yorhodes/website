@@ -1,13 +1,14 @@
 [
     {
         "link": "mailto:contact@yorke.dev",
-        "platform": "mail",
-        "label": "contact"
+        "label": "email"
     },
     {
-        "link": "https://zcal.co/i/BPoGFzXm",
-        "platform": "calendar",
-        "label": "schedule"
+        "link": "https://zcal.co/yorhodes",
+        "label": "calendar"
+    },
+    {
+        "link": "https://telegram.me/yorhodes"
     },
     {
         "link": "https://github.com/yorhodes"
@@ -22,9 +23,7 @@
         "link": "https://huggingface.co/yorhodes"
     },
     {
-        "link": "https://curius.app/yorke-rhodes-iv",
-        "platform": "reader",
-        "label": "curius"
+        "link": "https://curius.app/yorke-rhodes-iv"
     },
     {
         "link": "https://substack.com/profile/5470140-yorke-rhodes-iv"
@@ -39,8 +38,7 @@
         "link": "https://chess.com/member/yorhodes"
     },
     {
-        "link": "https://dune.com/yorhodes",
-        "label": "dune"
+        "link": "https://dune.com/yorhodes"
     },
     {
         "link": "https://medium.com/@yorkerhodesiv"
@@ -58,9 +56,6 @@
     {
         "link": "https://observablehq.com/@yorhodes",
         "label": "observable"
-    },
-    {
-        "link": "https://telegram.me/yorhodes"
     },
     {
         "link": "https://steamcommunity.com/profiles/76561198061512019/",

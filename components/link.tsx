@@ -1,5 +1,5 @@
 import { Link, Button } from "@chakra-ui/react";
-import { Social, PlatformString } from "../types";
+import { Social } from "../types";
 
 import { IconType } from "react-icons";
 
@@ -22,8 +22,8 @@ import {
 import { MdEmail } from 'react-icons/md';
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
 
-const IconMap: Record<PlatformString, IconType> = {
-  mail: MdEmail,
+const IconMap: Record<string, IconType> = {
+  email: MdEmail,
   calendar: FaCalendar,
   github: FaGithub,
   notion: SiNotion,
@@ -36,10 +36,10 @@ const IconMap: Record<PlatformString, IconType> = {
   medium: FaMedium,
   goodreads: FaGoodreads,
   reddit: FaReddit,
-  discordapp: FaDiscord,
-  observablehq: SiObservable,
+  discord: FaDiscord,
+  observable: SiObservable,
   telegram: FaTelegram,
-  steamcommunity: FaSteam,
+  steam: FaSteam,
   ens: FaEthereum
 }
 
@@ -50,7 +50,7 @@ interface LogoLinkProps {
 }
 
 const socialToLink = (social: Social): LogoLinkProps => {
-  const platform = social.platform ?? new URL(social.link).hostname.split('.').reverse()[1];
+  const platform = social.label ?? new URL(social.link).hostname.split('.').reverse()[1];
   const label = social.label ?? platform;
   const icon: IconType = IconMap[platform] ?? FaBookReader;
   return {
@@ -69,7 +69,7 @@ export const LogoLink = (props: LogoLinkProps) => (
           transform: "scale(1.1)",
         }}
         leftIcon={props.icon({})}
-        size="x-small"
+        size="small"
       >
         {props.label}
       </Button>
