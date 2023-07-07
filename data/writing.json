@@ -15,24 +15,36 @@
         "title": "Consensus and Industry",
         "description": "Introduction to consensus algorithms and the industrial ecosystems surrounding Bitcoin PoW",
         "link": "https://medium.com/rice-blockchain/consensus-industry-fd81e7c4b1ac",
-        "published": "February 2019"
+        "published": "Feb 2019"
     },
     {
         "title": "Abstracting Blockchains",
         "description": "A framework for identifying and understanding the modular components of blockchains",
         "link": "https://medium.com/rice-blockchain/abstracting-blockchains-enabling-stateful-applications-1ea694843939",
-        "published": "February 2019"
+        "published": "Feb 2019"
     },
     {
         "title": "Digital Currencies and Networks",
         "description": "History of money, digital currencies, and network effects",
         "link": "https://medium.com/rice-blockchain/digital-currencies-networks-ad7ebeec712c",
-        "published": "January 2019"
+        "published": "Jan 2019"
     },
     {
         "title": "Building decentralized knowledge using incentives",
         "description": "Discussion of \"Synapse\": an economically sustainable and secure Wikipedia",
         "link": "https://medium.com/rice-blockchain/synapse-build-decentralized-knowledge-using-incentives-544aef5542d3",
-        "published": "October 2018"
+        "published": "Oct 2018"
+    },
+    {
+        "title": "HackerNoon: What on Earth is a Smart Contract?",
+        "description": "Notes from Rice Blockchain lecture on smart contracts",
+        "link": "https://medium.com/hackernoon/what-on-earth-is-a-smart-contract-2c82e5d89d26",
+        "published": "Nov 2017"
+    },
+    {
+        "title": "HackerNoon: A Revolutionary Approach to Academic Validation Using Ethereum",
+        "description": "HackRice project for validating academic credentials without the National Clearinghouse",
+        "link": "https://medium.com/hackernoon/a-revolutionary-approach-to-academic-validation-using-ethereum-99a8818fc7cf",
+        "published": "Sept 2017"
     }
 ]
