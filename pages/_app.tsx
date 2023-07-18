@@ -4,7 +4,6 @@ import { ChakraProvider, Container } from '@chakra-ui/react'
 import theme from "../theme"
 
 import Navbar from '../components/navbar';
-import Footer from '../components/footer';
 
 import navbar from "../data/navbar.json";
 
@@ -15,7 +14,6 @@ const App = ( {Component, pageProps} : AppProps) => {
       <Container>
         {Navbar(navbar)}
         <Component {...pageProps} />
-        <Footer/>
       </Container>
       <Analytics/>
     </ChakraProvider>

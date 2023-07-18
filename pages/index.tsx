@@ -1,16 +1,27 @@
 import { Box, Flex } from "@chakra-ui/react";
 
-import { Bio } from "../components/bio";
-import ExternalPlatformLink from "../components/link";
-
-import bio from "../data/bio.json";
 import links from "../data/links.json";
+import bio from "../data/bio.json";
+
+import { Bio } from "../components/bio";
+import SocialLogoLink from "../components/link";
+
+const SELECT = [
+  'email',
+  'calendar',
+  'twitter',
+  'telegram',
+  'discord',
+  'github',
+];
+
+const selected = SELECT.map((s) => links.find(({link, label}) => link.includes(s) || label?.includes(s)));
 
 const IndexPage = () => (
   <Box>
     {Bio(bio)}
     <Flex wrap="wrap" gap="2">
-      {links.map(ExternalPlatformLink)}
+      {links.map(SocialLogoLink)}
     </Flex>
   </Box>
 );
