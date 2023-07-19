@@ -6,7 +6,7 @@
         "location": "New York City",
         "roles": [
             {
-                "title": "Founding Engineer",
+                "title": "Founding Protocol Engineer",
                 "description": "Solving fragmentation of blockchain networks with an economically secure, low latency interoperability protocol. Built for seamless developer experience across scaling solutions.",
                 "start": "April 2022",
                 "end": "Present"
@@ -20,7 +20,7 @@
         "location": "San Francisco",
         "roles": [
             {
-                "title": "Smart Contract Specialist",
+                "title": "Smart Contract Engineer",
                 "description": "Built Gauntlet's 1st on-chain protocol: Aera Finance. Risk aware, capital efficient treasury management solution for DAOs. Audited by Spearbit. Would have prevented the Terra collapse.",
                 "start": "December 2021",
                 "end": "May 2022"
@@ -120,16 +120,13 @@
         "roles": [
             {
                 "title": "Robotics Programming & Electronics Lead",
-                "start": "September 2015",
-                "end": "May 2016"
-            },
-            {
-                "title": "Cancer Society President",
+                "description": "Lead highly selective and competitive FRC team. Established freshmen Java, SolidWorks, and Eagle CAD bootcamps. Implemented PID fine motor controls and computer vision techniques",
                 "start": "September 2015",
                 "end": "May 2016"
             },
             {
                 "title": "Student",
+                "description": "Honor Roll and National Honors Society member. Alumni include eight Nobel laureates and six Pulitzer authors. Personal favorites are Leslie Lamport and Martin Hellman.",
                 "start": "September 2012",
                 "end": "May 2016"
             }
