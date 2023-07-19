@@ -4,7 +4,7 @@ import links from "../../data/links.json";
 import writing from "../../data/writing.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const link = req.query.link?.toString() ?? "";
+  const link: string = req.query.link?.toString() ?? "";
 
   const result = [...links, ...writing].find(
     (o) =>
