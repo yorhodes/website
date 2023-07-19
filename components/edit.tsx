@@ -4,10 +4,10 @@ import { Link, Button } from "@chakra-ui/react";
 
 const getRepo = () => {
   // https://vercel.com/docs/concepts/projects/environment-variables#system-environment-variables
-  const platform = process.env.VERCEL_GIT_PROVIDER ?? "github";
-  const name = process.env.VERCEL_GIT_REPO_SLUG ?? "website";
-  const owner = process.env.VERCEL_GIT_REPO_OWNER ?? "yorhodes";
-  const branch = process.env.VERCEL_GIT_COMMIT_REF ?? "yorke";
+  const platform = process.env.NEXT_PUBLIC_VERCEL_GIT_PROVIDER ?? "github";
+  const name = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG ?? "website";
+  const owner = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER ?? "yorhodes";
+  const branch = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ?? "yorke";
 
   const repo = `https://${platform}.com/${owner}/${name}`;
 
