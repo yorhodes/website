@@ -4,13 +4,13 @@ import links from "../../data/links.json";
 import writing from "../../data/writing.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { link } = req.query;
+  const link = req.query.link?.toString() ?? "";
 
   const result = [...links, ...writing].find(
     (o) =>
-      o.link.includes(link.toString()) || 
-      'label' in o && o.label?.includes(link.toString()) ||
-      'title' in o && o.title?.includes(link.toString())
+      o.link.includes(link) ||
+      'label' in o && o.label?.includes(link) ||
+      'title' in o && o.title?.includes(link)
   );
 
   if (result) {
