@@ -1,8 +1,7 @@
 [
     {
         "link": "mailto:<email>",
-        "platform": "mail",
-        "label": "contact"
+        "label": "email"
     },
     {
         "link": "https://github.com/<username>"
