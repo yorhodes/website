@@ -61,7 +61,7 @@
         "roles": [
             {
                 "title": "Faculty Instructor",
-                "description": "Taught full-credit course (2x) in the Center for Computational Finance and Economic Systems (CoFES) alongside Professor Manolo Sanchez and Topl founder / CTO James Aman.",
+                "description": "Taught full-credit course (2x) in the Center for Computational Finance and Economic Systems alongside Professor Manolo Sanchez and Topl founder / CTO James Aman.",
                 "end": "May 2020",
                 "start": "September 2018"
             },
@@ -100,7 +100,7 @@
         "roles": [
             {
                 "title": "Intern",
-                "description": "Built the first Token Curated Registry (TCR) for the adChain registry, a whitelist of trusted advertisers for consumption by token holding web publishers. Shipped a generic ERC20 voting standard with partial locking and commit reveal (PLCR) scheme.",
+                "description": "Built the first Token Curated Registry for the adChain registry, a whitelist of trusted advertisers for consumption by token holding web publishers. Shipped a generic ERC20 voting standard with partial locking and commit reveal scheme.",
                 "start": "May 2017",
                 "end": "August 2017"
             },
