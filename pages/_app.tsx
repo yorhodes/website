@@ -1,13 +1,13 @@
-import { Analytics } from '@vercel/analytics/react';
-import { AppProps } from "next/app"
-import { ChakraProvider, Container } from '@chakra-ui/react'
-import theme from "../theme"
+import { Analytics } from "@vercel/analytics/react";
+import { AppProps } from "next/app";
+import { ChakraProvider, Container } from "@chakra-ui/react";
+import theme from "../theme";
 
-import Navbar from '../components/navbar';
+import Navbar from "../components/navbar";
 
 import navbar from "../data/navbar.json";
 
-const App = ( {Component, pageProps} : AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
       <title>Yorke Rhodes - Developer</title>
@@ -15,9 +15,9 @@ const App = ( {Component, pageProps} : AppProps) => {
         {Navbar(navbar)}
         <Component {...pageProps} />
       </Container>
-      <Analytics/>
+      <Analytics />
     </ChakraProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;
