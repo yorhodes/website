@@ -7,13 +7,13 @@ import Appendix from "./appendix";
 const ExperienceRole = (role: Role) => {
   return (
     <Flex key={role.title + role.end} direction="row">
-      <Flex direction="column" width="75%">
+      <Flex direction="column" width="80%">
         <Text fontSize="md" as="u">
           {role.title}
         </Text>
         <Text fontSize="sm">{Appendix(role.description ?? "", appendix)}</Text>
       </Flex>
-      <Flex direction="column" width="25%">
+      <Flex direction="column" width="20%">
         <Text fontSize="x-small" align="right">
           {role.end}
         </Text>
