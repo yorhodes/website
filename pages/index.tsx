@@ -21,7 +21,7 @@ const IndexPage = () => (
   <Box>
     {Bio(bio)}
     <Flex wrap="wrap" gap="2">
-      {links.map(SocialLogoLink)}
+      {selected.map(SocialLogoLink)}
     </Flex>
   </Box>
 );
