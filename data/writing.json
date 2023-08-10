@@ -1,5 +1,11 @@
 [
     {
+        "title": "Building with Modular Security Legos",
+        "description": "Motivation of modular interoperability and an overview of Hyperlane interchain security modules",
+        "link": "https://medium.com/hyperlane/building-with-modular-security-legos-1b11112ded1a",
+        "published": "Aug 2023"
+    },
+    {
         "title": "Announcing Interchain Accounts and Queries for the EVM",
         "description": "An introduction to two developer primitives that vastly simplify building crosschain applications",
         "link": "https://medium.com/hyperlane/announcing-interchain-accounts-and-queries-783452e23ff2",
