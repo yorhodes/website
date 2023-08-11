@@ -7,7 +7,7 @@
         "roles": [
             {
                 "title": "Co-founder, Protocol Engineer",
-                "description": "Solving fragmentation of blockchain networks with an economically secure, low latency interoperability protocol. Built for seamless developer experience across scaling solutions.",
+                "description": "Solving fragmentation of blockchain networks with a modular interoperability protocol. Built for seamless developer experience across scaling solutions and rollups. Used by Aave.",
                 "start": "April 2022",
                 "end": "Present"
             }
@@ -54,6 +54,20 @@
         ]
     },
     {
+        "name": "Rice Blockchain",
+        "logo": "rice_blockchain.png",
+        "link": "https://medium.com/rice-blockchain",
+        "location": "Houston",
+        "roles": [
+            {
+                "title": "Founder, President",
+                "description": "Founded student organization focused on blockchain education, research, development and evangelism. Led 50+ members in maintaining a newsletter, organizing workshops, and meeting with industry professionals. Repeat host of Houston Ethereum Meetup.",
+                "end": "May 2020",
+                "start": "September 2017"
+            }
+        ]
+    },
+    {
         "name": "Rice University",
         "logo": "rice-university_logo.png",
         "link": "https://www.rice.edu",
@@ -64,12 +78,6 @@
                 "description": "Taught full-credit course (2x) in the CoFES Institute alongside Professor Manolo Sanchez and Topl founder / CTO James Aman.",
                 "end": "May 2020",
                 "start": "September 2018"
-            },
-            {
-                "title": "Rice Blockchain President",
-                "description": "Founded student organization focused on blockchain education, research, development and evangelism. Led 50+ members in maintaining a newsletter, organizing workshops, and meeting with industry professionals. Repeat host of Houston Ethereum Meetup.",
-                "end": "May 2020",
-                "start": "September 2017"
             },
             {
                 "title": " Student, Computer Science BSE",
