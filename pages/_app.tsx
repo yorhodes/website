@@ -6,11 +6,12 @@ import theme from "../theme";
 import Navbar from "../components/navbar";
 
 import navbar from "../data/navbar.json";
+import bio from "../data/bio.json";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
-      <title>Yorke Rhodes - Developer</title>
+      <title >{`${bio.name} - Developer`}</title>
       <Container>
         {Navbar(navbar)}
         <Component {...pageProps} />
