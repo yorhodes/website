@@ -18,12 +18,12 @@ export const getStaticProps = async () => {
     link: twitter,
   };
 
-  const url = process.env.VERCEL_URL!;
+  const url = process.env.NEXT_PUBLIC_VERCEL_URL ?? "localhost:3000" + "/writing";
   const date = new Date();
 
   const feed = new Feed({
     title: `${bio.name}'s blog`,
-    description: "random description",
+    description: `${bio.title} - ${bio.tagline}`,
     id: url,
     link: url,
     copyright: `All rights reserved ${date.getFullYear()}, ${bio.name}`,
