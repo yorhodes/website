@@ -61,9 +61,9 @@ export const getStaticProps = async () => {
 const WritingPage = () => (
   <Box>
     <Flex justify="right" marginBottom="5" marginTop="-3">
-      <Button leftIcon={FaRss({})} iconSpacing="0">
-        <Link href="/rss/feed.xml" passHref/>
-      </Button>
+      <Link href="/rss/feed.xml" passHref>
+      <Button leftIcon={FaRss({})} iconSpacing="0"/>
+      </Link>
     </Flex>
     <Flex direction="column" gap="3">
       {writing.map(WritingElem)}
