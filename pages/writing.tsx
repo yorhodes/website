@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Button, Flex } from "@chakra-ui/react";
 import WritingElem from "../components/writing";
 
 import writing from "../data/writing.json";
@@ -7,6 +7,8 @@ import bio from "../data/bio.json";
 
 import { Feed } from "feed";
 import fs from "fs";
+import Link from "next/link";
+import { FaRss } from "react-icons/fa";
 
 export const getStaticProps = async () => {
   const { link: twitter } = links.find((l) => l.link.includes("twitter"))!;
@@ -18,7 +20,8 @@ export const getStaticProps = async () => {
     link: twitter,
   };
 
-  const url = process.env.NEXT_PUBLIC_VERCEL_URL ?? "localhost:3000" + "/writing";
+  const url =
+    (process.env.NEXT_PUBLIC_VERCEL_URL ?? "localhost:3000") + "/writing";
   const date = new Date();
 
   const feed = new Feed({
@@ -57,6 +60,11 @@ export const getStaticProps = async () => {
 
 const WritingPage = () => (
   <Box>
+    <Flex justify="right" marginBottom="5" marginTop="-3">
+      <Button leftIcon={FaRss({})} iconSpacing="0">
+        <Link href="/rss/feed.xml" passHref/>
+      </Button>
+    </Flex>
     <Flex direction="column" gap="3">
       {writing.map(WritingElem)}
     </Flex>
