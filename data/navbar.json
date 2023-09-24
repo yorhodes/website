@@ -10,5 +10,9 @@
     {
         "link": "/writing",
         "text": "writing"
+    },
+    {
+        "link": "/talks",
+        "text": "talks"
     }
 ]

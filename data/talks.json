@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Hyperlane Interchain Accounts",
+        "description": "ETH Bogota",
+        "link": "https://www.youtube.com/watch?v=JjcweMKUnJE",
+        "published": "Aug 2023"
+    },
+    {
+        "title": "Devs Do Something: Hyperlane, Cross Chain Tech, and Solidity",
+        "description": "",
+        "link": "https://www.youtube.com/watch?v=b8XNb8DxuZI",
+        "published": "Aug 2023"
+    },
+    {
+        "title": "Connect any Chain with Hyperlane",
+        "description": "ETH Waterloo",
+        "link": "https://www.youtube.com/watch?v=cc7tF9HbQAw",
+        "published": "Aug 2023"
+    },
+    {
+        "title": "Building the Interchain with Hyperlane",
+        "description": "ETH Tokyo",
+        "link": "https://www.youtube.com/watch?v=laFC83-RHZQ",
+        "published": "Aug 2023"
+    },
+    {
+        "title": "Permissionless Interoperability with Hyperlane",
+        "description": "Scaling Ethereum",
+        "link": "https://www.youtube.com/watch?v=NpCOi7iZhHI",
+        "published": ""
+    }
+]
