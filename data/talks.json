@@ -1,32 +1,32 @@
 [
     {
-        "title": "Hyperlane Interchain Accounts",
-        "description": "ETH Bogota",
-        "link": "https://www.youtube.com/watch?v=JjcweMKUnJE",
-        "published": "Aug 2023"
-    },
-    {
-        "title": "Devs Do Something: Hyperlane, Cross Chain Tech, and Solidity",
-        "description": "",
+        "title": "Devs Do Something: Cross Chain Tech and DX",
+        "description": "Podcast interview with Sam Flamini of Superfluid on cross chain tech and developer experience",
         "link": "https://www.youtube.com/watch?v=b8XNb8DxuZI",
-        "published": "Aug 2023"
+        "published": "Nov 2022"
     },
     {
-        "title": "Connect any Chain with Hyperlane",
-        "description": "ETH Waterloo",
+        "title": "ETH Waterloo: Connect any Chain with Hyperlane",
+        "description": "Hackathon workshop on how to permissionlessly expand the Hyperlane protocol to any chain",
         "link": "https://www.youtube.com/watch?v=cc7tF9HbQAw",
-        "published": "Aug 2023"
+        "published": "July 2023"
     },
     {
-        "title": "Building the Interchain with Hyperlane",
-        "description": "ETH Tokyo",
+        "title": "ETH Tokyo: Building the Interchain with Hyperlane",
+        "description": "Hackathon workshop on interchain application architectures with Hyperlane",
         "link": "https://www.youtube.com/watch?v=laFC83-RHZQ",
-        "published": "Aug 2023"
+        "published": "May 2023"
     },
     {
-        "title": "Permissionless Interoperability with Hyperlane",
-        "description": "Scaling Ethereum",
+        "title": "Scaling Ethereum: Permissionless Interoperability with Hyperlane",
+        "description": "Hackathon workshop on how to permissionlessly expand the Hyperlane protocol to any chain",
         "link": "https://www.youtube.com/watch?v=NpCOi7iZhHI",
-        "published": ""
+        "published": "Mar 2023"
+    },
+    {
+        "title": "ETH Bogota: Interchain Accounts",
+        "description": "Hackathon workshop on how to leverage Hyperlane's interchain accounts",
+        "link": "https://www.youtube.com/watch?v=JjcweMKUnJE",
+        "published": "Oct 2022"
     }
 ]
