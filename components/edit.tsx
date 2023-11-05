@@ -27,7 +27,7 @@ const Edit = () => {
 
   return (
     <Link href={editUrl} isExternal>
-      <HStack marginTop="3">
+      <HStack marginTop="5">
         <FaEdit color="gray"/>
         <Text color="gray">Edit content on GitHub</Text>
       </HStack>

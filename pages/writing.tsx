@@ -1,4 +1,4 @@
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Text, Link } from "@chakra-ui/react";
 import WritingElem from "../components/writing";
 
 import writing from "../data/writing.json";
@@ -7,7 +7,6 @@ import bio from "../data/bio.json";
 
 import { Feed } from "feed";
 import fs from "fs";
-import Link from "next/link";
 import { FaRss } from "react-icons/fa";
 
 export const getStaticProps = async () => {
@@ -60,12 +59,13 @@ export const getStaticProps = async () => {
 
 const WritingPage = () => (
   <Box>
-    <Flex justify="right" marginBottom="5" marginTop="-3">
-      <Link href="/rss/feed.xml" passHref>
-      <Button leftIcon={FaRss({})} iconSpacing="0"/>
-      </Link>
-    </Flex>
     <Flex direction="column" gap="3">
+      <Link href="/rss/feed.xml" isExternal>
+        <HStack>
+          <FaRss color="gray" />
+          <Text color="gray">Subscribe</Text>
+        </HStack>
+      </Link>
       {writing.map(WritingElem)}
     </Flex>
   </Box>
