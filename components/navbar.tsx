@@ -30,7 +30,6 @@ const Navbar = (navPages: NavPage[]) => {
     <HStack paddingY="5">
       {navPages.map(NavElem)}
       <Spacer />
-      <Edit />
       <ToggleDarkModeButton />
     </HStack>
   );
