@@ -4,8 +4,8 @@ import { Content } from "../types";
 const WritingElem = (content: Content) => (
   <Flex key={content.title} direction="row">
     <Flex direction="column" width="75%">
-      <Link href={content.link} as="b" isExternal>
-        {content.title}
+      <Link href={content.link} isExternal>
+        <Text as="b">{content.title}</Text>
       </Link>
       <Text fontSize="sm">{content.description}</Text>
     </Flex>
