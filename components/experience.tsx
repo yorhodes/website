@@ -32,6 +32,7 @@ const ExperienceElem = (experience: Experience) => {
         <Link href={experience.link} textAlign="center" isExternal>
           <Img
             bg="white"
+            padding="3"
             src={`logos/${experience.logo}`}
             objectFit="scale-down"
             maxWidth="20"
