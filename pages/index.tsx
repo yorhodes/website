@@ -11,8 +11,7 @@ const SELECT = [
   'email',
   'github',
   'twitter',
-  'telegram',
-  'discord',
+  'telegram'
 ];
 
 const selected: Social[] = SELECT.map((s): Social => links.find(({link, label}) => link.includes(s) || label?.includes(s))!);
@@ -20,7 +19,7 @@ const selected: Social[] = SELECT.map((s): Social => links.find(({link, label}) 
 const IndexPage = () => (
   <Box>
     {Bio(bio)}
-    <HStack>
+    <HStack wrap="wrap">
       {selected.map(SocialLogoLink)}
     </HStack>
   </Box>

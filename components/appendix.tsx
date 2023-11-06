@@ -7,7 +7,7 @@ const Appendix = (text: string, appendix: Record<string, string>) => {
     if (!match) return text;
     return (
       <Link
-        rounded="md"
+        rounded="sm"
         padding="0.1rem"
         background={color}
         key={text}

@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { HStack, useColorMode, Spacer, Button } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { NavPage } from "../types";
-import Edit from "./edit";
 
 const NavElem = (navPage: NavPage) => {
   const router = useRouter();
@@ -11,7 +10,12 @@ const NavElem = (navPage: NavPage) => {
 
   return (
     <NextLink href={navPage.link} key={navPage.text} passHref>
-      <Button shadow={isActive ? "inner" : "base"}>{navPage.text}</Button>
+      <Button
+        shadow={isActive ? "md" : "base"}
+        transform={isActive ? "scale(1.1)" : "scale(1)"}
+      >
+        {navPage.text}
+      </Button>
     </NextLink>
   );
 };
@@ -27,7 +31,7 @@ const ToggleDarkModeButton = () => {
 
 const Navbar = (navPages: NavPage[]) => {
   return (
-    <HStack paddingY="5">
+    <HStack paddingY="5" wrap="wrap" gap="3">
       {navPages.map(NavElem)}
       <Spacer />
       <ToggleDarkModeButton />

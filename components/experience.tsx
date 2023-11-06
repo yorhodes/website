@@ -8,7 +8,7 @@ const ExperienceRole = (role: Role) => {
   return (
     <Flex key={role.title + role.end} direction="row">
       <Flex direction="column" width="80%">
-        <Text fontSize="md" as="u">
+        <Text fontSize="md" as="b">
           {role.title}
         </Text>
         <Text fontSize="sm">{Appendix(role.description ?? "", appendix)}</Text>
@@ -32,7 +32,6 @@ const ExperienceElem = (experience: Experience) => {
         <Link href={experience.link} textAlign="center" isExternal>
           <Img
             bg="white"
-            padding="3"
             src={`logos/${experience.logo}`}
             objectFit="scale-down"
             maxWidth="20"

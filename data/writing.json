@@ -6,7 +6,7 @@
         "published": "Aug 2023"
     },
     {
-        "title": "Announcing Interchain Accounts and Queries for the EVM",
+        "title": "Interchain Accounts and Queries for the EVM",
         "description": "An introduction to two developer primitives that vastly simplify building crosschain applications",
         "link": "https://medium.com/hyperlane/announcing-interchain-accounts-and-queries-783452e23ff2",
         "published": "Nov 2022"
@@ -24,7 +24,7 @@
         "published": "Feb 2019"
     },
     {
-        "title": "Abstracting Blockchains",
+        "title": "Framework for Abstracting Blockchains",
         "description": "A framework for identifying and understanding the modular components of blockchains",
         "link": "https://medium.com/rice-blockchain/abstracting-blockchains-enabling-stateful-applications-1ea694843939",
         "published": "Feb 2019"
@@ -48,7 +48,7 @@
         "published": "Nov 2017"
     },
     {
-        "title": "HackerNoon: A Revolutionary Approach to Academic Validation Using Ethereum",
+        "title": "HackerNoon: Academic Diploma Validation Using Ethereum",
         "description": "HackRice project for validating academic credentials without the National Clearinghouse",
         "link": "https://medium.com/hackernoon/a-revolutionary-approach-to-academic-validation-using-ethereum-99a8818fc7cf",
         "published": "Sept 2017"

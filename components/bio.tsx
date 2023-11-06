@@ -12,7 +12,7 @@ export const Bio = (content: BioContent) => (
         src="headshot.jpeg"
         borderRadius='full'
         boxSize="150px"
-        filter="grayscale(50%)"
+        filter="grayscale(30%)"
         _hover={{
           filter: "grayscale(10%)",
         }}
