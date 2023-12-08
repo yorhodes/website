@@ -1,5 +1,11 @@
 [
     {
+        "title": "Modular Economic Security: Bridge Disaster Insurance",
+        "description": "Using Eigenlayer and shared economic security to insure users against bridge risk between heterogenous chains.",
+        "link": "https://medium.com/hyperlane/modular-economic-security-bridge-disaster-insurance-5b837f366a6a",
+        "published": "Dec 2023"
+    },
+    {
         "title": "Building with Modular Security Legos",
         "description": "Motivation of modular interoperability and an overview of Hyperlane interchain security modules",
         "link": "https://medium.com/hyperlane/building-with-modular-security-legos-1b11112ded1a",
