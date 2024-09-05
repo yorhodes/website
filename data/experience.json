@@ -14,6 +14,21 @@
         ]
     },
     {
+        "name": "Spearbit",
+        "link": "https://spearbit.com/",
+        "logo": "spearbit_pictogram_brand.svg",
+        "location": "Remote",
+        "roles": [
+            {
+                "title": "Part-Time Security Researcher",
+                "description": "Reviewing and auditing smart contracts for security vulnerabilities and incentive incompatibilities. Specializing in DeFi and Proof of Stake protocols.",
+                "start": "April 2023",
+                "end": "Present"
+            }
+        ]
+
+    },
+    {
         "name": "Gauntlet",
         "link": "https://gauntlet.network/",
         "logo": "gauntlet.png",
