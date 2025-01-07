@@ -1,5 +1,11 @@
 [
     {
+        "title": "Hack VC Gigabrain Sessions: Episode 1 with Hyperlane",
+        "description": "Comprehensive overview of Hyperlane architecture motivated from first principles",
+        "link": "https://www.youtube.com/watch?v=y_5rmVHjjjk",
+        "published": "Fall 2024"
+    },
+    {
         "title": "ETHCC Restaking Day: Managing AVS Risks",
         "description": "Panel of early AVS builders covering restake stability, implications of pooled security, etc",
         "link": "https://x.com/gauntlet_xyz/status/1823779271552475195",
