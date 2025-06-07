@@ -1,12 +1,11 @@
-import { Flex } from "@chakra-ui/react";
 import WritingElem from "../components/writing";
 
 import talks from "../data/talks.json";
 
 const TalksPage = () => (
-    <Flex direction="column" gap="3">
-      {talks.map(WritingElem)}
-    </Flex>
+  <div className="flex flex-col gap-3">
+    {talks.map(WritingElem)}
+  </div>
 );
 
 export default TalksPage;

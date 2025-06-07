@@ -16,6 +16,6 @@ Functions in the [pages](./pages) directory map content to components and organi
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Components and themes from [Chakra UI](https://chakra-ui.com/).
+Styled with [Tailwind CSS](https://tailwindcss.com/) and [next-themes](https://github.com/pacocoursey/next-themes).
 
 [yorke.dev](https://yorke.dev) is deployed with [Vercel](https://vercel.com/) from the [yorke](https://github.com/yorhodes/website/tree/yorke) branch.

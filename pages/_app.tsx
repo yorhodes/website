@@ -1,7 +1,7 @@
+import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { AppProps } from "next/app";
-import { ChakraProvider, Container, Spacer } from "@chakra-ui/react";
-import theme from "../theme";
+import { ThemeProvider } from "next-themes";
 
 import Navbar from "../components/navbar";
 import Edit from "../components/edit";
@@ -11,15 +11,15 @@ import bio from "../data/bio.json";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <ChakraProvider theme={theme}>
+    <ThemeProvider attribute="class" defaultTheme="system">
       <title>{`${bio.name} - Developer`}</title>
-      <Container marginBottom="5">
+      <div className="container mx-auto mb-5 px-4">
         {Navbar(navbar)}
         <Component {...pageProps} />
         {Edit()}
-      </Container>
+      </div>
       <Analytics />
-    </ChakraProvider>
+    </ThemeProvider>
   );
 };
 

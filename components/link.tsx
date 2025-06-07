@@ -1,4 +1,3 @@
-import { Link, Button, ButtonProps } from "@chakra-ui/react";
 import { Social } from "../types";
 
 import { IconType } from "react-icons";
@@ -61,16 +60,17 @@ const socialToLink = (social: Social): LogoLinkProps => {
 }
 
 export const LogoLink = (props: LogoLinkProps) => (
-    <Link key={props.label} href={props.link} isExternal>
-      <Button
-        padding="2"
-        leftIcon={props.icon({})}
-        size="small"
-      >
-        {props.label}
-      </Button>
-    </Link>
-  );
+  <a
+    key={props.label}
+    href={props.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-1 px-2 py-1 rounded shadow bg-gray-100 dark:bg-gray-800"
+  >
+    {props.icon({})}
+    {props.label}
+  </a>
+);
 
 const SocialLogoLink = (social: Social) => LogoLink(socialToLink(social));
 
