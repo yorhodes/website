@@ -1,8 +1,9 @@
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
-import { FaMoon, FaSun } from "react-icons/fa";
-import { NavPage } from "../types";
+import { Moon, Sun } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { NavPage } from '../types'
 
 const NavElem = (navPage: NavPage) => {
   const router = useRouter();
@@ -23,12 +24,13 @@ const NavElem = (navPage: NavPage) => {
 const ToggleDarkModeButton = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <button
+    <Button
+      variant="ghost"
+      size="icon"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 rounded bg-gray-100 dark:bg-gray-800"
     >
-      {theme === 'dark' ? <FaSun /> : <FaMoon />}
-    </button>
+      {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+    </Button>
   );
 };
 
