@@ -1,16 +1,23 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 import links from "../../data/links.json";
-import writing from "../../data/writing.json";
+import { getAllPosts } from "../../lib/posts";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const link: string = req.query.link?.toString() ?? "";
 
-  const result = [...links, ...writing].find(
+  const posts = getAllPosts();
+  const postLinks = posts.map(p => ({
+    link: p.link ?? `/writing/${p.slug}`,
+    slug: p.slug,
+    title: p.title,
+  }));
+  const result = [...links, ...postLinks].find(
     (o) =>
       o.link.includes(link) ||
-      'label' in o && o.label?.includes(link) ||
-      'title' in o && o.title?.includes(link)
+      ('slug' in o && o.slug === link) ||
+      ('label' in o && o.label?.includes(link)) ||
+      ('title' in o && o.title?.includes(link))
   );
 
   if (result) {

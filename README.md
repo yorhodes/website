@@ -4,9 +4,9 @@ This is my attempt at creating a minimal, modular personal website. It is design
 
 ## Layout
 
-The author's personal website content is defined as simple JSON blobs in the [data](./data) directory.
-
-Personal content must match the schema defined as Typescript interfaces in the [types](./types.ts) file (enforced at build time).
+The website content now lives in MDX files under the [posts](./posts) directory.
+Frontmatter fields include `title`, `description`, `published` and an optional `link` for cross-posted articles.
+MDX allows writing Markdown with embedded React components for a flexible editing experience.
 
 Functions in the [components](./components) directory transform static content that matches the schema to responsive React components.
 

@@ -33,8 +33,10 @@ export interface NavPage {
 }
 
 export interface Content {
+  slug: string;
   title: string;
   description: string;
-  link: string;
   published: string;
+  /** Optional canonical link if originally posted elsewhere */
+  link?: string;
 }
