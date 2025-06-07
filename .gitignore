@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+.yarn/
+.yarnrc.yml
 
 # testing
 /coverage

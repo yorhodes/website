@@ -1,5 +1,3 @@
-import { Box, Flex, HStack, Spacer } from "@chakra-ui/react";
-
 import links from "../data/links.json";
 import bio from "../data/bio.json";
 
@@ -17,12 +15,12 @@ const SELECT = [
 const selected: Social[] = SELECT.map((s): Social => links.find(({link, label}) => link.includes(s) || label?.includes(s))!);
 
 const IndexPage = () => (
-  <Box>
+  <div>
     {Bio(bio)}
-    <HStack wrap="wrap">
+    <div className="flex flex-wrap gap-2">
       {selected.map(SocialLogoLink)}
-    </HStack>
-  </Box>
+    </div>
+  </div>
 );
 
 export default IndexPage;

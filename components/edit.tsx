@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { FaEdit } from "react-icons/fa";
-import { Link, Button, HStack, Box, Text } from "@chakra-ui/react";
 
 const getRepo = () => {
   // https://vercel.com/docs/concepts/projects/environment-variables#system-environment-variables
@@ -26,12 +25,15 @@ const Edit = () => {
   const editUrl = `${repo}/edit/${branch}/data/${file}.json`;
 
   return (
-    <Link href={editUrl} isExternal>
-      <HStack marginTop="5">
-        <FaEdit color="gray"/>
-        <Text color="gray">Edit content on GitHub</Text>
-      </HStack>
-    </Link>
+    <a
+      href={editUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-5 inline-flex items-center gap-2 text-gray-500"
+    >
+      <FaEdit />
+      <span>Edit content on GitHub</span>
+    </a>
   );
 };
 
