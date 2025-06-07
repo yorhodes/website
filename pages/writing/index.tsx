@@ -1,16 +1,19 @@
 import { Box, Button, Flex } from "@chakra-ui/react";
-import WritingElem from "../components/writing";
+import WritingElem from "../../components/writing";
 
-import writing from "../data/writing.json";
-import links from "../data/links.json";
-import bio from "../data/bio.json";
+import links from "../../data/links.json";
+import bio from "../../data/bio.json";
+import { getAllPosts, Content } from "../../lib/posts";
 
 import { Feed } from "feed";
 import fs from "fs";
 import Link from "next/link";
 import { FaRss } from "react-icons/fa";
+import { GetStaticProps } from "next";
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = getAllPosts();
+
   const { link: twitter } = links.find((l) => l.link.includes("twitter"))!;
   const { link: email } = links.find((l) => l.label!.includes("email"))!;
 
@@ -38,11 +41,11 @@ export const getStaticProps = async () => {
       atom: `${url}/rss/atom.xml`,
     },
   });
-  writing.forEach((post) =>
+  posts.forEach((post) =>
     feed.addItem({
       title: post.title,
-      id: post.link,
-      link: post.link,
+      id: post.slug,
+      link: `${url}/${post.slug}`,
       description: post.description,
       content: post.description,
       author: [author],
@@ -55,18 +58,22 @@ export const getStaticProps = async () => {
   fs.writeFileSync("./public/rss/atom.xml", feed.atom1());
   fs.writeFileSync("./public/rss/feed.json", feed.json1());
 
-  return { props: {} };
+  return { props: { posts } };
 };
 
-const WritingPage = () => (
+interface WritingProps {
+  posts: Content[];
+}
+
+const WritingPage = ({ posts }: WritingProps) => (
   <Box>
     <Flex justify="right" marginBottom="5" marginTop="-3">
       <Button leftIcon={FaRss({})} iconSpacing="0">
-        <Link href="/rss/feed.xml" passHref/>
+        <Link href="/rss/feed.xml" passHref />
       </Button>
     </Flex>
     <Flex direction="column" gap="3">
-      {writing.map(WritingElem)}
+      {posts.map(WritingElem)}
     </Flex>
   </Box>
 );
