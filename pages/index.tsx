@@ -16,7 +16,7 @@ const SELECT = [
 ];
 
 const selected: Social[] = SELECT.map((s): Social => links.find(({link, label}) => link.includes(s) || label?.includes(s))!);
-const chessLink: Social = links.find(({link}) => link.includes('chess.com'))!;
+const chessLink: Social | undefined = links.find(({link}) => link.includes('chess.com'))!;
 
 interface IndexPageProps {
   chessStats: ChessStats | null;
