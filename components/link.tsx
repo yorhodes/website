@@ -1,4 +1,4 @@
-import { Link, Button, ButtonProps } from "@chakra-ui/react";
+import { Link, Button, ButtonProps, Text } from "@chakra-ui/react";
 import { Social } from "../types";
 
 import { IconType } from "react-icons";
@@ -21,6 +21,7 @@ import {
 } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
+import { ChessStats } from "../lib/chess";
 
 const IconMap: Record<string, IconType> = {
   email: MdEmail,
@@ -71,6 +72,16 @@ export const LogoLink = (props: LogoLinkProps) => (
       </Button>
     </Link>
   );
+
+interface ChessLinkProps extends Social {
+  chessStats?: ChessStats | null;
+}
+
+export const ChessLink = ({ chessStats, ...social }: ChessLinkProps) => {
+  const props = socialToLink(chessStats ? { ...social, link: chessStats.link } : social);
+  const displayLabel = chessStats ? `${props.label} (${chessStats.rating})` : props.label;
+  return LogoLink({ ...props, label: displayLabel });
+};
 
 const SocialLogoLink = (social: Social) => LogoLink(socialToLink(social));
 
