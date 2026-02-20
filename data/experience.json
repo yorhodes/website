@@ -6,9 +6,9 @@
         "location": "New York City",
         "roles": [
             {
-                "title": "Founding Team, Protocol Architect",
-                "description": "Solving fragmentation of blockchain networks with a modular interoperability protocol. Built for seamless developer experience across scaling solutions and rollups. Used by Aave.",
-                "start": "April 2022",
+                "title": "Founding Engineer, Protocol Lead",
+                "description": "Designed and built a modular interoperability protocol deployed across 150+ chains spanning Ethereum, Solana, Cosmos, Starknet, and more, facilitating over $10B in cross-chain value transfer. Adopted by Aave, Velodrome, Relay, and Renzo.",
+                "start": "Apr 2022",
                 "end": "Present"
             }
         ]
@@ -20,9 +20,9 @@
         "location": "Remote",
         "roles": [
             {
-                "title": "Part-Time Security Researcher",
-                "description": "Reviewing and auditing smart contracts for security vulnerabilities and incentive incompatibilities. Specializing in DeFi and Proof of Stake protocols.",
-                "start": "April 2023",
+                "title": "Security Researcher",
+                "description": "Audited smart contracts across DeFi and Proof of Stake protocols including Eco stablecoin, Symbiotic restaking, and Royco. Reviewed Solidity and Solana programs for security vulnerabilities and incentive flaws.",
+                "start": "Apr 2023",
                 "end": "Present"
             }
         ]
@@ -36,8 +36,8 @@
         "roles": [
             {
                 "title": "Smart Contract Engineer",
-                "description": "Built Gauntlet's 1st on-chain protocol: Aera Finance. Risk aware, capital efficient treasury management solution for DAOs. Audited by Spearbit. Would have prevented the Terra collapse.",
-                "start": "December 2021",
+                "description": "Designed and built Aera Finance, Gauntlet's first on-chain protocol — a risk-aware treasury management solution adopted by Compound and Uniswap. Manages ~$150M TVL generating ~$5M in annual fee revenue.",
+                "start": "Dec 2021",
                 "end": "May 2022"
             }
         ]
@@ -50,21 +50,21 @@
         "roles": [
             {
                 "title": "Partner, Smart Contracts Lead",
-                "description": "Code owner on production contracts for stablecoin and phone number ownership protocols. Orchestrated DAO governance with security oriented contract release process leveraging OpenZeppelin audits and Certora formal verification.",
-                "end": "December 2021",
-                "start": "March 2020"
+                "description": "Led smart contract development for stablecoin and identity protocols as code owner on production contracts. Orchestrated DAO governance and established a security-first release process with OpenZeppelin audits and Certora formal verification.",
+                "end": "Dec 2021",
+                "start": "Mar 2020"
             },
             {
                 "title": "Contractor, Protocol Engineering",
-                "description": "Built first production implementation of Coinbase Rosetta, an abstraction used for exchange accounting, low level tracing of value transfer, and high security offline staking services for Coinbase Custody customers.",
-                "end": "March 2020",
-                "start": "August 2019"
+                "description": "Built the first production implementation of Coinbase Rosetta, enabling exchange accounting, low-level value transfer tracing, and high-security offline staking for Coinbase Custody.",
+                "end": "Mar 2020",
+                "start": "Aug 2019"
             },
             {
-                "title": "Intern, Protocol Engineering",
-                "description": "Implemented Proof of Stake validator features and slashing conditions, optimized oracle exchange rate reporting for stablecoin protocol, and contributed to privacy preserving enhancements to proof of phone number ownership protocol.",
-                "end": "August 2019",
-                "start": "April 2019"
+                "title": "Software Engineer, Protocol Engineering",
+                "description": "Implemented Proof of Stake validator logic and slashing conditions. Optimized oracle exchange rate reporting and contributed privacy-preserving enhancements to the phone number ownership protocol.",
+                "end": "Aug 2019",
+                "start": "Apr 2019"
             }
         ]
     },
@@ -76,9 +76,9 @@
         "roles": [
             {
                 "title": "Founder, President",
-                "description": "Founded student organization focused on blockchain education, research, development and evangelism. Led 50+ members in maintaining a newsletter, organizing workshops, and meeting with industry professionals. Repeat host of Houston Ethereum Meetup.",
+                "description": "Founded and led 50+ member student organization for blockchain education and development. Organized workshops, hosted Houston Ethereum Meetup, and established industry partnerships.",
                 "end": "May 2020",
-                "start": "September 2017"
+                "start": "Sep 2017"
             }
         ]
     },
@@ -90,14 +90,15 @@
         "roles": [
             {
                 "title": "Faculty Instructor",
-                "description": "Taught full-credit course (2x) in the CoFES Institute alongside Professor Manolo Sanchez and Topl founder / CTO James Aman.",
+                "description": "Taught two semesters of a full-credit blockchain course at the CoFES Institute alongside Professor Manolo Sanchez of the Jones Graduate School of Business.",
                 "end": "May 2020",
-                "start": "September 2018"
+                "start": "Sep 2018"
             },
             {
-                "title": " Student, Computer Science BSE",
+                "title": "Student, Computer Science BSE",
+                "description": "Cum laude, President's Honor Roll. Coursework in Compilers, Operating Systems, High Performance Computing, Secure Cloud Computing, and Formal Methods. Research on using software-defined networks to accelerate distributed consensus.",
                 "end": "May 2020",
-                "start": "September 2016"
+                "start": "Sep 2016"
             }
         ]
     },
@@ -108,10 +109,10 @@
         "location": "New York City",
         "roles": [
             {
-                "title": "Intern, Blockchain Garage",
-                "description": "Developed the IBM Blockchain Starter Kit: an open-source bootstrap tool for applications on Hyperledger. Includes build, test, deploy framework for goLang and NodeJS. Shipped a CLI for vastly improved developer experience.",
+                "title": "Software Engineer, Blockchain Garage",
+                "description": "Built the IBM Blockchain Starter Kit, an open-source scaffold for Hyperledger applications with build, test, and deploy tooling for Go and Node.js. Shipped a CLI that streamlined the developer onboarding experience.",
                 "start": "May 2018",
-                "end": "August 2018"
+                "end": "Aug 2018"
             }
         ]
     },
@@ -122,16 +123,16 @@
         "location": "New York City",
         "roles": [
             {
-                "title": "Intern",
-                "description": "Built the first Token Curated Registry for the adChain registry, a whitelist of trusted advertisers for consumption by token holding web publishers. Shipped a generic ERC20 voting standard with partial locking and commit reveal scheme.",
+                "title": "Software Engineer",
+                "description": "Built the first Token Curated Registry (adChain), a decentralized whitelist of trusted advertisers for web publishers. Shipped a reusable ERC20 voting standard with partial locking and commit-reveal scheme.",
                 "start": "May 2017",
-                "end": "August 2017"
+                "end": "Aug 2017"
             },
             {
-                "title": "Intern",
-                "description": "Worked on early smart contract prototypes like Proof of Physical Address: an automated protocol for verifying mailing address ownership with secrets sent via snail mail.",
-                "start": "June 2016",
-                "end": "August 2016"
+                "title": "Software Engineer",
+                "description": "Developed Proof of Physical Address, an early smart contract protocol for automated mailing address verification using secrets sent via physical mail.",
+                "start": "Jun 2016",
+                "end": "Aug 2016"
             }
         ]
     },
@@ -142,15 +143,9 @@
         "location": "New York City",
         "roles": [
             {
-                "title": "Robotics Programming & Electronics Lead",
-                "description": "Lead highly selective and competitive FRC team. Established freshmen Java, SolidWorks, and Eagle CAD bootcamps. Implemented PID fine motor controls and computer vision techniques",
-                "start": "September 2015",
-                "end": "May 2016"
-            },
-            {
-                "title": "Student",
-                "description": "Honor Roll and National Honors Society member. Alumni include Turing Award recipients Leslie Lamport and Martin Hellman.",
-                "start": "September 2012",
+                "title": "Student, Robotics Lead",
+                "description": "Led FRC robotics team, implementing PID motor controls and computer vision. Established Java, SolidWorks, and Eagle CAD bootcamps. Honor Roll and National Honors Society.",
+                "start": "Sep 2012",
                 "end": "May 2016"
             }
         ]

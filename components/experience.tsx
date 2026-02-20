@@ -11,7 +11,7 @@ const ExperienceRole = (role: Role) => {
         <Text fontSize="md" as="b">
           {role.title}
         </Text>
-        <Text fontSize="sm">{Appendix(role.description ?? "", appendix)}</Text>
+        <Text fontSize="sm" marginTop="1">{Appendix(role.description ?? "", appendix)}</Text>
       </Flex>
       <Flex direction="column" width="20%">
         <Text fontSize="x-small" align="right">
