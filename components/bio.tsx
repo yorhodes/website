@@ -5,8 +5,8 @@ export const Bio = (content: BioContent) => (
     <Flex direction="row" gap="10" py="5">
       <Flex direction="column">
         <Heading>{content.name}</Heading>
-        <Text fontSize="lg">{content.title}</Text>
-        <Text paddingTop="5">{content.tagline}</Text>
+        <Text fontSize="lg">Engineer</Text>
+        <Text paddingTop="3">{content.tagline}</Text>
       </Flex>
       <Img
         src="headshot.jpeg"

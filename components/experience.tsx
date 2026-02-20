@@ -4,7 +4,7 @@ import { Experience, Role } from "../types";
 import appendix from "../data/appendix.json";
 import Appendix from "./appendix";
 
-const ExperienceRole = (role: Role) => {
+const ExperienceRole = (role: Role, index: number, location?: string) => {
   return (
     <Flex key={role.title + role.end} direction="row">
       <Flex direction="column" width="80%">
@@ -14,6 +14,11 @@ const ExperienceRole = (role: Role) => {
         <Text fontSize="sm" marginTop="1">{Appendix(role.description ?? "", appendix)}</Text>
       </Flex>
       <Flex direction="column" width="20%">
+        {index === 0 && location && (
+          <Text fontSize="x-small" align="right" color="gray.500">
+            {location}
+          </Text>
+        )}
         <Text fontSize="x-small" align="right">
           {role.end}
         </Text>
@@ -28,7 +33,7 @@ const ExperienceRole = (role: Role) => {
 const ExperienceElem = (experience: Experience) => {
   return (
     <Flex direction="row" gap="5" key={experience.name}>
-      <Flex direction="column" alignItems="center" maxWidth="20">
+      <Flex direction="column" alignItems="center" width="20" flexShrink={0}>
         <Link href={experience.link} textAlign="center" isExternal>
           <Img
             bg="white"
@@ -39,14 +44,13 @@ const ExperienceElem = (experience: Experience) => {
             minHeight="20"
             rounded="lg"
           />
-          <Text as="b">{experience.name}</Text>
+          <Text as="b" fontSize="sm">
+            {experience.name}
+          </Text>
         </Link>
-        <Text marginY="-1" fontSize="x-small">
-          {experience.location}
-        </Text>
       </Flex>
       <Flex direction="column" width="100%" gap="3">
-        {experience.roles.map(ExperienceRole)}
+        {experience.roles.map((role, i) => ExperienceRole(role, i, experience.location))}
       </Flex>
     </Flex>
   );

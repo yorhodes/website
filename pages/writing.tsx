@@ -25,7 +25,7 @@ export const getStaticProps = async () => {
 
   const feed = new Feed({
     title: `${bio.name}'s blog`,
-    description: `${bio.title} - ${bio.tagline}`,
+    description: bio.tagline,
     id: url,
     link: url,
     copyright: `All rights reserved ${date.getFullYear()}, ${bio.name}`,
