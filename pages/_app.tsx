@@ -4,7 +4,6 @@ import { ChakraProvider, Container, Spacer } from "@chakra-ui/react";
 import theme from "../theme";
 
 import Navbar from "../components/navbar";
-import Edit from "../components/edit";
 
 import navbar from "../data/navbar.json";
 import bio from "../data/bio.json";
@@ -16,7 +15,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Container marginBottom="5">
         {Navbar(navbar)}
         <Component {...pageProps} />
-        {Edit()}
       </Container>
       <Analytics />
     </ChakraProvider>
