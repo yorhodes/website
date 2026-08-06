@@ -395,6 +395,10 @@ export default async function handler(
     "Content-Disposition",
     'inline; filename="yorke-rhodes-resume.pdf"'
   );
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=3600, stale-while-revalidate=86400"
+  );
 
   pdfStream.pipe(res);
 }

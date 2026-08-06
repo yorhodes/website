@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+  <rect x="42" y="42" width="1116" height="546" rx="24" fill="#ffffff" stroke="#d9dde3" stroke-width="2"/>
+  <rect x="96" y="132" width="8" height="268" rx="4" fill="#1a56db"/>
+  <text x="144" y="225" fill="#17191c" font-family="Helvetica Neue, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2">Yorke Rhodes IV</text>
+  <text x="148" y="330" fill="#343942" font-family="Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="500">Distributed Systems Engineer &amp; Technical Leader</text>
+  <text x="148" y="472" fill="#1a56db" font-family="Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600">yorke.dev</text>
+</svg>

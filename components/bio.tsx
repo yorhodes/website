@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { keyframes } from "@emotion/react";
-import { Flex, Text, Heading, Img, usePrefersReducedMotion } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading, usePrefersReducedMotion } from "@chakra-ui/react";
 import { BioContent } from "../types";
 
 const carouselFade = keyframes`
@@ -27,9 +28,14 @@ export const Bio = (content: BioContent) => {
   }, [content.title.length, prefersReducedMotion]);
 
   return (
-    <Flex direction="row" gap="10" py="5">
+    <Flex
+      direction={{ base: "column-reverse", sm: "row" }}
+      alignItems={{ base: "flex-start", sm: "center" }}
+      gap={{ base: "6", sm: "10" }}
+      py="5"
+    >
       <Flex direction="column">
-        <Heading aria-label={content.name}>
+        <Heading as="h1" aria-label={content.name}>
           {displayName}
           {hasRomanSuffix && (
             <Text
@@ -58,15 +64,28 @@ export const Bio = (content: BioContent) => {
         </Text>
         <Text marginTop="4">{content.tagline}</Text>
       </Flex>
-      <Img
-        src="headshot.jpeg"
-        borderRadius='full'
-        boxSize="150px"
+      <Box
+        position="relative"
+        boxSize={{ base: "120px", sm: "150px" }}
+        borderRadius="full"
+        overflow="hidden"
+        flexShrink="0"
         filter="grayscale(30%)"
+        transition="filter 150ms ease"
         _hover={{
           filter: "grayscale(10%)",
         }}
-      />
+      >
+        <Image
+          src="/headshot.webp"
+          alt="Yorke Rhodes IV"
+          fill
+          priority
+          unoptimized
+          sizes="(max-width: 479px) 120px, 150px"
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
     </Flex>
   );
 };
