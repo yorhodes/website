@@ -1,4 +1,4 @@
-import { Link, Button, ButtonProps, Text } from "@chakra-ui/react";
+import { Link, Button, Icon, useColorModeValue } from "@chakra-ui/react";
 import { Social } from "../types";
 
 import { IconType } from "react-icons";
@@ -6,9 +6,10 @@ import { IconType } from "react-icons";
 import {
   FaBookReader,
   FaCalendar,
-  FaChess,
+  FaChessKnight,
   FaDiscord,
   FaEthereum,
+  FaFileAlt,
   FaGithub,
   FaGoodreads,
   FaLinkedin,
@@ -19,12 +20,12 @@ import {
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
-import { MdEmail } from 'react-icons/md';
+import { MdOutlineEmail } from 'react-icons/md';
 import { SiNotion, SiObservable, SiSubstack } from 'react-icons/si';
-import { ChessStats } from "../lib/chess";
 
 const IconMap: Record<string, IconType> = {
-  email: MdEmail,
+  email: MdOutlineEmail,
+  resume: FaFileAlt,
   calendar: FaCalendar,
   github: FaGithub,
   notion: SiNotion,
@@ -33,7 +34,7 @@ const IconMap: Record<string, IconType> = {
   substack: SiSubstack,
   spotify: FaSpotify,
   linkedin: FaLinkedin,
-  chess: FaChess,
+  chess: FaChessKnight,
   medium: FaMedium,
   goodreads: FaGoodreads,
   reddit: FaReddit,
@@ -61,28 +62,31 @@ const socialToLink = (social: Social): LogoLinkProps => {
   }
 }
 
-export const LogoLink = (props: LogoLinkProps) => (
-    <Link key={props.label} href={props.link} isExternal>
+export const LogoLink = (props: LogoLinkProps) => {
+  const hoverBackground = useColorModeValue("blackAlpha.100", "whiteAlpha.200");
+
+  return (
+    <Link href={props.link} isExternal _hover={{ textDecoration: "none" }}>
       <Button
-        padding="2"
-        leftIcon={props.icon({})}
-        size="small"
+        variant="ghost"
+        shadow="none"
+        paddingX="3"
+        paddingY="2"
+        leftIcon={<Icon as={props.icon} boxSize="4" opacity="0.9" />}
+        size="sm"
+        fontWeight="600"
+        transition="background-color 150ms ease, color 150ms ease, transform 150ms ease"
+        _hover={{ bg: hoverBackground, transform: "translateY(-1px)" }}
       >
         {props.label}
       </Button>
     </Link>
   );
-
-interface ChessLinkProps extends Social {
-  chessStats?: ChessStats | null;
-}
-
-export const ChessLink = ({ chessStats, ...social }: ChessLinkProps) => {
-  const props = socialToLink(chessStats ? { ...social, link: chessStats.link } : social);
-  const displayLabel = chessStats ? `${props.label} (${chessStats.rating})` : props.label;
-  return LogoLink({ ...props, label: displayLabel });
 };
 
-const SocialLogoLink = (social: Social) => LogoLink(socialToLink(social));
+const SocialLogoLink = (social: Social) => {
+  const props = socialToLink(social);
+  return <LogoLink key={props.label} {...props} />;
+};
 
 export default SocialLogoLink;

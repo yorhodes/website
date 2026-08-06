@@ -1,5 +1,12 @@
 {
     "name": "Yorke Rhodes IV",
-    "title": "Protocol Engineer",
-    "tagline": "Using cryptography and distributed systems to build a more open internet."
+    "title": [
+        "Distributed Systems Engineer",
+        "Technical Leader",
+        "Protocol Architect"
+    ],
+    "tagline": "Exploring technical roles at companies building developer tools and infrastructure.",
+    "valuesTitle": "What I care about",
+    "values": "I’m drawn to positive-sum work: open source, public goods, and infrastructure that grows more robust through use and scrutiny. I believe in moving quickly without compromising correctness or reliability. I’m motivated by pushing the boundaries of what technology can do and applying that progress to problems that matter.",
+    "interests": "Outside of work, I enjoy playing basketball, snowboarding, cooking or pickling something, and improving at"
 }

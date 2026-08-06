@@ -4,7 +4,7 @@ import WritingElem from "../components/writing";
 import talks from "../data/talks.json";
 
 const TalksPage = () => (
-    <Flex direction="column" gap="3">
+    <Flex direction="column" gap="5">
       {talks.map(WritingElem)}
     </Flex>
 );

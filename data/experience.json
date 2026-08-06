@@ -6,10 +6,10 @@
         "location": "New York City",
         "roles": [
             {
-                "title": "Founding Engineer, Protocol Lead",
-                "description": "Designed and built a modular interoperability protocol deployed across 150+ chains spanning Ethereum, Solana, Cosmos, Starknet, and more, facilitating over $10B in cross-chain value transfer. Adopted by Aave, Velodrome, Relay, and Renzo.",
+                "title": "Founding Engineer",
+                "description": "Designed, built, and operated the Hyperlane protocol: security-critical infrastructure for moving data and assets between blockchains. Provided technical leadership to 6+ engineers across protocol and developer experience teams, delivering the core protocol, TypeScript SDK, deployment CLI, and partner APIs for products including Velodrome's privacy-preserving cross-chain swaps. Scaled to 200+ chains and 7+ VMs, maintaining production reliability through on-call rotations and incident response. Over 4 years, processed $10B+ with zero critical hacks and reached #1 among cross-chain bridges by deposited assets on DefiLlama.",
                 "start": "Apr 2022",
-                "end": "Present"
+                "end": "Jun 2026"
             }
         ]
     },
@@ -23,7 +23,7 @@
                 "title": "Security Researcher",
                 "description": "Audited smart contracts across DeFi and Proof of Stake protocols including Eco stablecoin, Symbiotic restaking, and Royco. Reviewed Solidity and Solana programs for security vulnerabilities and incentive flaws.",
                 "start": "Apr 2023",
-                "end": "Present"
+                "end": "Jun 2026"
             }
         ]
 
@@ -36,7 +36,7 @@
         "roles": [
             {
                 "title": "Smart Contract Engineer",
-                "description": "Designed and built Aera Finance, Gauntlet's first on-chain protocol — a risk-aware treasury management solution adopted by Compound and Uniswap. Manages ~$150M TVL generating ~$5M in annual fee revenue.",
+                "description": "Designed and built Aera Finance, Gauntlet's first on-chain protocol: a risk-aware treasury management solution adopted by Compound and Uniswap. Manages ~$150M in assets and generates ~$5M in annual fees.",
                 "start": "Dec 2021",
                 "end": "May 2022"
             }
@@ -50,19 +50,19 @@
         "roles": [
             {
                 "title": "Partner, Smart Contracts Lead",
-                "description": "Led smart contract development for stablecoin and identity protocols as code owner on production contracts. Orchestrated DAO governance and established a security-first release process with OpenZeppelin audits and Certora formal verification.",
+                "description": "Led production smart-contract development for stablecoin, identity, and governance systems. Established a security-first release process with OpenZeppelin audits and Certora formal verification.",
                 "end": "Dec 2021",
                 "start": "Mar 2020"
             },
             {
                 "title": "Contractor, Protocol Engineering",
-                "description": "Built the first production implementation of Coinbase Rosetta, enabling exchange accounting, low-level value transfer tracing, and high-security offline staking for Coinbase Custody.",
+                "description": "Built the first production Coinbase Rosetta implementation for custody and exchange infrastructure.",
                 "end": "Mar 2020",
                 "start": "Aug 2019"
             },
             {
                 "title": "Software Engineer, Protocol Engineering",
-                "description": "Implemented Proof of Stake validator logic and slashing conditions. Optimized oracle exchange rate reporting and contributed privacy-preserving enhancements to the phone number ownership protocol.",
+                "description": "Built Proof of Stake validator and slashing logic; improved stablecoin oracle efficiency and identity protocol privacy.",
                 "end": "Aug 2019",
                 "start": "Apr 2019"
             }
@@ -96,7 +96,7 @@
             },
             {
                 "title": "Student, Computer Science BSE",
-                "description": "Cum laude, President's Honor Roll. Coursework in Compilers, Operating Systems, High Performance Computing, Secure Cloud Computing, and Formal Methods. Research on using software-defined networks to accelerate distributed consensus.",
+                "description": "Magna cum laude, President's Honor Roll. Coursework in Compilers, Operating Systems, High Performance Computing, Secure Cloud Computing, and Formal Methods. Research on using software-defined networks to accelerate distributed consensus.",
                 "end": "May 2020",
                 "start": "Sep 2016"
             }

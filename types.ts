@@ -7,8 +7,11 @@ export interface Place {
 
 export interface BioContent {
   name: string;
-  title: string;
+  title: string[];
   tagline: string;
+  valuesTitle: string;
+  values: string;
+  interests: string;
 }
 
 export interface Role {

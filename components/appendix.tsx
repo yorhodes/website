@@ -1,6 +1,11 @@
 import { Link, useColorModeValue, useHighlight } from "@chakra-ui/react";
 
-const Appendix = (text: string, appendix: Record<string, string>) => {
+interface AppendixProps {
+  text: string;
+  appendix: Record<string, string>;
+}
+
+const Appendix = ({ text, appendix }: AppendixProps) => {
   const chunks = useHighlight({ text, query: Object.keys(appendix) });
   const color = useColorModeValue("gray.100", "gray.700");
   return chunks.map(({ match, text }) => {

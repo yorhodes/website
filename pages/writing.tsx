@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Text, Link } from "@chakra-ui/react";
+import { Box, Flex, HStack, Text, Link } from "@chakra-ui/react";
 import WritingElem from "../components/writing";
 
 import writing from "../data/writing.json";
@@ -57,14 +57,22 @@ export const getStaticProps = async () => {
 
 const WritingPage = () => (
   <Box>
-    <Flex direction="column" gap="3">
-      <Link href="/rss/feed.xml" isExternal>
-        <HStack>
-          <FaRss color="gray" />
-          <Text color="gray">Subscribe</Text>
+    <Flex direction="column" gap="5">
+      {writing.map(WritingElem)}
+      <Link
+        href="/rss/feed.xml"
+        isExternal
+        alignSelf="flex-start"
+        color="gray"
+        opacity="0.75"
+        transition="opacity 150ms ease"
+        _hover={{ opacity: 1, textDecoration: "none" }}
+      >
+        <HStack spacing="2">
+          <FaRss />
+          <Text fontSize="sm">RSS feed</Text>
         </HStack>
       </Link>
-      {writing.map(WritingElem)}
     </Flex>
   </Box>
 );

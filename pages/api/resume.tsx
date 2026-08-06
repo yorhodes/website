@@ -13,7 +13,7 @@ import experiences from "../../data/experience.json";
 import talks from "../../data/talks.json";
 import { Experience } from "../../types";
 
-// --- Classify experiences ---
+// Classify experiences
 
 const educationNames = new Set(["Rice University", "Bronx Science"]);
 const pdfExcludedNames = new Set(["Rice Blockchain"]);
@@ -59,7 +59,7 @@ const educationExperiences = (
   // Put Rice University first
   .reverse();
 
-// --- Contact links ---
+// Contact links
 
 const contactLinks = [
   { label: "yorke.dev", url: "https://yorke.dev" },
@@ -69,12 +69,14 @@ const contactLinks = [
   { label: "twitter", url: "https://yorke.dev/link/twitter" },
 ];
 
-// --- Skills ---
+// Skills
 
-const skills =
-  "Solidity, Rust, TypeScript, Go, EVM, Solana, Cosmos SDK, Hyperledger, Smart Contract Security, Protocol Design";
+const expertise =
+  "Distributed Systems, Developer Infrastructure, Reliability Engineering, Security Engineering, Formal Methods & Program Verification, Technical Leadership";
 
-// --- Selected Talks ---
+const languages = "TypeScript, Rust, Go, Solidity, C++, Python";
+
+// Selected Talks
 
 const selectedTalks = [
   talks.find((t) => t.title.includes("ETHCC"))!,
@@ -82,7 +84,7 @@ const selectedTalks = [
   talks.find((t) => t.title.includes("Hack VC"))!,
 ];
 
-// --- Styles ---
+// Styles
 
 const colors = {
   primary: "#111111",
@@ -218,7 +220,7 @@ const styles = StyleSheet.create({
   },
 });
 
-// --- Components ---
+// Components
 
 const ContactRow = () => (
   <View style={styles.contactRow}>
@@ -236,8 +238,12 @@ const ContactRow = () => (
 const SkillsRow = () => (
   <View style={styles.skillsRow}>
     <Text>
-      <Text style={styles.skillsLabel}>Skills: </Text>
-      <Text style={styles.skillsText}>{skills}</Text>
+      <Text style={styles.skillsLabel}>Expertise: </Text>
+      <Text style={styles.skillsText}>{expertise}</Text>
+    </Text>
+    <Text>
+      <Text style={styles.skillsLabel}>Languages: </Text>
+      <Text style={styles.skillsText}>{languages}</Text>
     </Text>
   </View>
 );
@@ -264,7 +270,7 @@ const RoleEntry = ({
     <View style={styles.roleHeader}>
       <Text style={styles.roleTitle}>{role.title.trim()}</Text>
       <Text style={styles.roleDates}>
-        {role.start} — {role.end}
+        {role.start} to {role.end}
       </Text>
     </View>
     {role.description && (
@@ -293,7 +299,7 @@ const CollapsedEntry = ({ experience }: { experience: Experience }) => {
         <View style={styles.roleHeader}>
           <Text style={styles.roleTitle}>{roles[0].title.trim()}</Text>
           <Text style={styles.roleDates}>
-            {earliest} — {latest}
+            {earliest} to {latest}
           </Text>
         </View>
         {descriptions.length > 0 && (
@@ -341,7 +347,7 @@ const Section = ({
 
 const ResumeDocument = () => (
   <Document
-    title={`${bio.name} — Resume`}
+    title={`${bio.name} | Resume`}
     author={bio.name}
     subject="Resume"
   >
@@ -376,7 +382,7 @@ const ResumeDocument = () => (
   </Document>
 );
 
-// --- API Route ---
+// API Route
 
 export default async function handler(
   _req: NextApiRequest,

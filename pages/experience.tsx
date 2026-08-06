@@ -5,7 +5,9 @@ import experiences from "../data/experience.json";
 const ExperiencePage = () => (
   <Box>
     <Flex direction="column" gap="8">
-      {experiences.map(ExperienceElem)}
+      {experiences.map((experience) => (
+        <ExperienceElem key={experience.name} experience={experience} />
+      ))}
     </Flex>
   </Box>
 );

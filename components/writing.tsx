@@ -2,16 +2,34 @@ import { Text, Flex, Link } from "@chakra-ui/react";
 import { Content } from "../types";
 
 const WritingElem = (content: Content) => (
-  <Flex key={content.title} direction="row">
-    <Flex direction="column" width="75%">
+  <Flex key={content.title} direction="column" position="relative">
+    <Flex direction="column" width="100%">
       <Link href={content.link} isExternal>
         <Text as="b">{content.title}</Text>
       </Link>
-      <Text fontSize="sm">{content.description}</Text>
+      <Text
+        display={{ base: "block", md: "none" }}
+        fontSize="0.8125rem"
+        marginTop="1"
+        opacity="0.82"
+      >
+        {content.published}
+      </Text>
+      <Text fontSize="0.9375rem" marginTop="1">{content.description}</Text>
     </Flex>
-    <Flex direction="column" width="25%">
-      <Text fontSize="x-small" align="right">{content.published}</Text>
-    </Flex>
+    <Text
+      display={{ base: "none", md: "block" }}
+      position="absolute"
+      left="calc(100% + 12px)"
+      top="0"
+      width="16"
+      fontSize="0.8125rem"
+      textAlign="right"
+      whiteSpace="nowrap"
+      opacity="0.82"
+    >
+      {content.published}
+    </Text>
   </Flex>
 );
 
