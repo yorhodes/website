@@ -10,21 +10,20 @@ import Navbar from "../components/navbar";
 
 import navbar from "../data/navbar.json";
 import bio from "../data/bio.json";
+import { getOgImageUrl, getPageMetadata, SITE_URL } from "../lib/metadata";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   const prefersReducedMotion = usePrefersReducedMotion();
-  const pageNames: Record<string, string> = {
-    "/experience": "Experience",
-    "/writing": "Writing",
-    "/talks": "Talks",
-  };
+  const pageMetadata = getPageMetadata(router.pathname);
   const homeTitle = "Yorke Rhodes IV | Distributed Systems Engineer & Technical Leader";
-  const pageTitle = pageNames[router.pathname]
-    ? `${pageNames[router.pathname]} | Yorke Rhodes IV`
-    : homeTitle;
-  const description = "Distributed systems engineer and technical leader building secure infrastructure, developer tools, and high-reliability systems.";
-  const canonicalUrl = `https://www.yorke.dev${router.asPath.split("?")[0]}`;
+  const pageTitle =
+    pageMetadata.path === "/"
+      ? homeTitle
+      : `${pageMetadata.label} | Yorke Rhodes IV`;
+  const description = pageMetadata.description;
+  const canonicalUrl = `${SITE_URL}${router.asPath.split("?")[0]}`;
+  const ogImageUrl = getOgImageUrl(router.pathname);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
@@ -65,15 +64,16 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content="https://www.yorke.dev/og-image.png" />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={`${bio.name}, Distributed Systems Engineer and Technical Leader`} />
+        <meta property="og:image:alt" content={`${pageMetadata.label}: ${pageMetadata.title}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://www.yorke.dev/og-image.png" />
-        <meta name="twitter:image:alt" content={`${bio.name}, Distributed Systems Engineer and Technical Leader`} />
+        <meta name="twitter:image" content={ogImageUrl} />
+        <meta name="twitter:image:alt" content={`${pageMetadata.label}: ${pageMetadata.title}`} />
         {router.pathname === "/" && (
           <script
             type="application/ld+json"
