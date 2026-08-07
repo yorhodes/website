@@ -1,7 +1,9 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
 import { ChakraProvider, Container, usePrefersReducedMotion } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import theme from "../theme";
@@ -15,6 +17,12 @@ import { getOgImageUrl, getPageMetadata, SITE_URL } from "../lib/metadata";
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   const prefersReducedMotion = usePrefersReducedMotion();
+  const isInitialPage = useRef(true);
+
+  useEffect(() => {
+    isInitialPage.current = false;
+  }, []);
+
   const pageMetadata = getPageMetadata(router.pathname);
   const homeTitle = "Yorke Rhodes IV | Distributed Systems Engineer & Technical Leader";
   const pageTitle =
@@ -87,7 +95,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         {Navbar(navbar)}
         <motion.main
           key={router.pathname}
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 4 }}
+          initial={prefersReducedMotion || isInitialPage.current ? false : { opacity: 0, y: 4 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.15, ease: "easeOut" }}
         >
@@ -95,6 +103,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         </motion.main>
       </Container>
       <Analytics />
+      <SpeedInsights />
     </ChakraProvider>
   );
 };

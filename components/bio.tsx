@@ -13,6 +13,7 @@ const carouselFade = keyframes`
 
 export const Bio = (content: BioContent) => {
   const [titleIndex, setTitleIndex] = useState(0);
+  const [hasRotated, setHasRotated] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
   const hasRomanSuffix = content.name.endsWith(" IV");
   const displayName = hasRomanSuffix ? content.name.slice(0, -3) : content.name;
@@ -21,6 +22,7 @@ export const Bio = (content: BioContent) => {
     if (prefersReducedMotion || content.title.length < 2) return;
 
     const interval = window.setInterval(() => {
+      setHasRotated(true);
       setTitleIndex((current) => (current + 1) % content.title.length);
     }, 3000);
 
@@ -58,7 +60,7 @@ export const Bio = (content: BioContent) => {
           minHeight="1.5em"
           marginTop="2"
           aria-label={content.title.join(", ")}
-          animation={prefersReducedMotion ? undefined : `${carouselFade} 3s ease-in-out`}
+          animation={!prefersReducedMotion && hasRotated ? `${carouselFade} 3s ease-in-out` : undefined}
         >
           {content.title[titleIndex]}
         </Text>
